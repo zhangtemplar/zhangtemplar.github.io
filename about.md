@@ -14,9 +14,9 @@ permalink: /about/
  
 # Skills
 
-  - **Programing** C, Java, Python and Objective-C on varying platforms including iOS and Android;\\
-  - **Computer vision** motion analysis, action recognition, face recognition, object recognition;\\
-  - **Machine learning** sparse learning, multiple task learning, statistical learning;\\
+  - **Programing** C, Java, Python and Objective-C on varying platforms including iOS and Android;
+  - **Computer vision** motion analysis, action recognition, face recognition, object recognition;
+  - **Machine learning** sparse learning, multiple task learning, statistical learning;
   - **Deep Learning** Convolution neural networks, recurrent neural network/long short term memory.
 
 
@@ -43,13 +43,13 @@ permalink: /about/
     - Lead algorithm and software development for 3D camera (time of flight, ToF);
     
       - Improve depth quality over noise and motion blur;
-      - Optimize the code for real time performance on multiple platforms, e.g., ARM, Mali GPU and CEVA MM3101 (Inutive 3000) DSP;
+      - Optimize the code for real time performance on mobile platforms, e.g., ARM, Mali GPU and CEVA MM3101 (Inutive 3000) DSP;
       
     - Research and develop deep learning algorithms;
     
-      - Develop deep learning algorithms for varying tasks, including image recognition, object detection, image quality assessment, image processing, image captioning, speech recongition and machine translation;
-      - Optimize deep learning algorithms for better speed and reduced memory footprint;
-      - Rich experience with both convolution neural network and recurrent neural network, and familar popular deep learning packages, including caffe, Theano (Keras);
+      - Develop deep learning algorithms for varying tasks, including image recognition, object detection, **image quality assessment**, **image processing**, image captioning, speech recongition and machine translation;
+      - Optimize deep learning algorithms for mobile platform (**deep learning chip**) with lower power consumption, better speed and reduced memory footprint;
+      - Rich experience with both convolution neural network and recurrent neural network, and familar popular deep learning packages, including caffe, Theano (Keras) and tensor flow;
       
     - Develop algorithm for high quality multi-frame super-resolution optimized for dynamic scene;
     - Several patents (US9665927, US15/076203, US15/075076, US4/931843, US14/856552, US14/836901) and papers;
@@ -80,7 +80,7 @@ permalink: /about/
     - Learn multiple classifiers jointly via multi-task learning. 
       
       - Exploit relative labels to abandon the requirement of the tradition labeling. 
-      - Evaluated in varying applications including motion analysis, image classification and image co-segmentation;
+      - Succeeded in varying applications including motion analysis, image classification and image co-segmentation;
 
     - Build vision-based human-robot interaction in indoor environment
     
