@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: Create Anime Characters with A.I
 ---
 
