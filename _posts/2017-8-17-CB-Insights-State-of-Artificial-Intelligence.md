@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: CB Insights State of Artificial Intelligence
 ---
 
