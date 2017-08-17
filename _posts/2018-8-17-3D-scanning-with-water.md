@@ -1,5 +1,5 @@
 ---
-layout: posts
+layout: post
 title: 3-D scanning with water
 ---
 
