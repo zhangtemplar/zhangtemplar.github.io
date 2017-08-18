@@ -8,7 +8,7 @@ Event bus can be very helpful when you need to pass events cross multiple object
 For example, you have object A and B, which need to communicate with each other, then you need to have listeners from A to B and also listeners from B to A. However, image you have more than two objects, you will need `o(n^2)` listenrs. If you don't remove all listeners, you will likely to run to memory leak.
 
 With event bus, the life is much easier, where each object only need to register to the event bus to recevice events and post events to event bus:
-[The apparent beauty of decoupling listeners](https://cdn-images-1.medium.com/max/1600/0*iGI8gnniCi7ol-I_.)
+![The apparent beauty of decoupling listeners](https://cdn-images-1.medium.com/max/1600/0*iGI8gnniCi7ol-I_.)
 
 **Pros**
   - You can effectively **decouple your** Fragments and Activities and get rid of really complex listener-based architectures.
