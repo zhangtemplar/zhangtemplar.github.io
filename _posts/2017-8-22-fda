@@ -1,0 +1,10 @@
+---
+layout: post
+title: FDA
+---
+
+FDA has provided the public access to their database of food, drug, medical devices and so on. It would be very useful if you are interested medical, health, food, medical device and so on.
+
+  - [](https://open.fda.gov/api/) open rest api for approved drug, device and bio;
+  - [](https://www.accessdata.fda.gov/scripts/cder/daf/index.cfm) also includes pending applications for drug;
+  - [](https://www.accessdata.fda.gov/scripts/cdrh/cfdocs/cfPMN/pmn.cfm) for medical device;
