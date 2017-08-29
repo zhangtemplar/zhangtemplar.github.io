@@ -1,0 +1,35 @@
+---
+layout: post
+title: Collection of generative models in Tensorflow
+---
+
+GAN, or Generative Adversarial Network, has been more and more popular, especially when you train your network creates something other than classification and regression. [Github repository](https://github.com/hwalsuklee/tensorflow-generative-model-collections) has kinderly collect all the variations of GANs and their implementation in a single repository.
+
+# Lists  
+
+*Name* | *Paer Link* | *Value Function*
+:---: | :---: | :--- |
+**GAN** | [Arxiv](https://arxiv.org/abs/1406.2661) | <img src = 'assets/equations/GAN.png' height = '70px'>
+**LSGAN**| [Arxiv](https://arxiv.org/abs/1611.04076) | <img src = 'assets/equations/LSGAN.png' height = '70px'>
+**WGAN**| [Arxiv](https://arxiv.org/abs/1701.07875) | <img src = 'assets/equations/WGAN.png' height = '105px'>
+**DRAGAN**| [Arxiv](https://arxiv.org/abs/1705.07215) | <img src = 'assets/equations/DRAGAN.png' height = '70px'>
+**CGAN**| [Arxiv](https://arxiv.org/abs/1411.1784) | <img src = 'assets/equations/CGAN.png' height = '70px'>
+**infoGAN**| [Arxiv](https://arxiv.org/abs/1606.03657) | <img src = 'assets/equations/infoGAN.png' height = '70px'>
+**ACGAN**| [Arxiv](https://arxiv.org/abs/1610.09585) | <img src = 'assets/equations/ACGAN.png' height = '70px'>
+**EBGAN**| [Arxiv](https://arxiv.org/abs/1609.03126) | <img src = 'assets/equations/EBGAN.png' height = '70px'>
+**BEGAN**| [Arxiv](https://arxiv.org/abs/1702.08431) | <img src = 'assets/equations/BEGAN.png' height = '105px'>  
+
+# Variants of GAN structure
+<img src = 'assets/etc/GAN_structure.png' height = '600px'>
+
+# Random generation
+All results are randomly sampled.
+
+*Name* | *Epoch 1* | *Epoch 2* | *Epoch 10*
+:---: | :---: | :---: | :---: |
+GAN | <img src = 'assets/mnist_results/random_generation/GAN_epoch000_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/GAN_epoch001_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/GAN_epoch009_test_all_classes.png' height = '230px'>
+LSGAN | <img src = 'assets/mnist_results/random_generation/LSGAN_epoch000_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/LSGAN_epoch001_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/LSGAN_epoch009_test_all_classes.png' height = '230px'>
+WGAN | <img src = 'assets/mnist_results/random_generation/WGAN_epoch000_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/WGAN_epoch001_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/WGAN_epoch009_test_all_classes.png' height = '230px'>
+DRAGAN | <img src = 'assets/mnist_results/random_generation/DRAGAN_epoch000_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/DRAGAN_epoch001_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/DRAGAN_epoch009_test_all_classes.png' height = '230px'>
+EBGAN | <img src = 'assets/mnist_results/random_generation/EBGAN_epoch000_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/EBGAN_epoch001_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/EBGAN_epoch009_test_all_classes.png' height = '230px'>
+BEGAN | <img src = 'assets/mnist_results/random_generation/BEGAN_epoch000_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/BEGAN_epoch001_test_all_classes.png' height = '230px'> | <img src = 'assets/mnist_results/random_generation/BEGAN_epoch009_test_all_classes.png' height = '230px'>
