@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Object detection: an overview in the age of Deep Learning
+title: Object detection, an overview in the age of Deep Learning
 ---
 
 There is a nice article summarizing the advances of object detection via deep learning: [Object detection: an overview in the age of Deep Learning](https://tryolabs.com/blog/2017/08/30/object-detection-an-overview-in-the-age-of-deep-learning/). For 
