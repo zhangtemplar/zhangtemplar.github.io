@@ -1,0 +1,44 @@
+---
+layout: post
+title: Free Certificate for Https
+---
+
+![Certbot](https://certbot.eff.org/images/certbot-logo-1A.svg)
+
+More and more website are using `https` now. In `Chrome`, if you access a website doesn't support https or using a invalid/expired certificate, you will get an anoying warning.
+
+If you are building a website, you definitely don't want your readers of your website getting such an anoying warning. To resolve this problem, you need to turn on https support and propably makes it default. To have https, you need to a valid and up to date certificate, which used to be expensive.
+
+Unfornately, [Let’s Encrypt](https://letsencrypt.org/getting-started/) has provided a free way of letting everyone generating its own certificate. 
+
+```
+Let’s Encrypt is a free, automated, and open certificate authority brought to you by the non-profit Internet Security Research Group (ISRG).
+```
+
+Even better, they have provided a tool to help you generate the certification automatically and renew your certificate automatically, if you have access to shell: [Certbot ACME client](https://certbot.eff.org/).
+
+All you need to do is to select your web server and host os system to decide the right command to use. For example, I am using `flask` and `ubuntu 14.04 64bit`, then it directs me to [https://certbot.eff.org/#ubuntutrusty-other](https://certbot.eff.org/#ubuntutrusty-other). 
+
+The installation is as simple as:
+
+```
+$ sudo apt-get update
+$ sudo apt-get install software-properties-common
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install certbot
+```
+
+Obtaining the license if even simpler:
+
+```
+sudo certbot certonly
+```
+
+To renew you can use:
+
+```sudo certbot renew --dry-run```
+
+To have automatical renew,  you can arrange for automatic renewal by adding a cron or systemd job which runs the following:
+
+```certbot renew```
