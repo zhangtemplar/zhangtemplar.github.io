@@ -39,13 +39,22 @@ A cache is a simple key-value store and it should reside as a buffering layer be
   - fully rendered blog articles
   - activity streams
   - user<->friend relationships
-
+  
 # Asynchronism
 
-f you do something time-consuming, try to do it always asynchronously. There are two ways:
+If you do something time-consuming, try to do it always asynchronously. There are two ways:
 - doing the time-consuming work in advance (e.g., training/updating a model) and serving the finished work with a low request time.
 - for some time consuming work which does depends on user's input, the frontend of your website sends a job onto a job queue and immediately signals back to the user: your job is in work, please continue to the browse the page.
   - The job queue is constantly checked by a bunch of workers for new jobs.
   - The frontend, which constantly checks for new “job is done” - signals, sees that the job was done and informs the user about it.
   - RabbitMQ is one of many systems which help to implement async processing.
+  
+  
+# Two Types of Scale
 
+- Horizontal scale: Scaling out using more commodity machines, which is more cost efficient and results in higher availability - Vertical scale: scaling up a single server on more expensive hardware
+
+Disavatanges of horizontal scale:
+
+- Scaling horizontally introduces complexity and involves cloning servers
+- Downstream servers such as caches and databases need to handle more simultaneous connections as upstream servers scale out
