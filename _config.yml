@@ -88,4 +88,5 @@ exclude:
   - CNAME
 
 collections:
-  - system_design
+  system_design:
+    output: true
