@@ -86,3 +86,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+
+collections:
+  - system_design
