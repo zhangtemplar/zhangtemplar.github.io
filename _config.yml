@@ -90,3 +90,4 @@ exclude:
 collections:
   system_design:
     output: true
+    permalink: /system_design/:name

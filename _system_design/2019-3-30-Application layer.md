@@ -3,10 +3,9 @@ layout: post
 title: Application layer
 ---
 
-# Introduction
-![Source: Intro to architecting systems for scale](https://camo.githubusercontent.com/feeb549c5b6e94f65c613635f7166dc26e0c7de7/687474703a2f2f692e696d6775722e636f6d2f7942355359776d2e706e67)
-
 Separating out the web layer from the application layer (also known as platform layer) allows you to scale and configure both layers independently. The single responsibility principle advocates for small and autonomous services that work together. Small teams with small services can plan more aggressively for rapid growth.
+
+![Source: Intro to architecting systems for scale](https://camo.githubusercontent.com/feeb549c5b6e94f65c613635f7166dc26e0c7de7/687474703a2f2f692e696d6775722e636f6d2f7942355359776d2e706e67)
 
 # Microservices
 

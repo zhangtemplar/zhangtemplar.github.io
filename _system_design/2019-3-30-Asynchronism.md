@@ -3,8 +3,6 @@ layout: post
 title: Asynchronism
 ---
 
-# Introduction
-
 Asynchronous workflows help reduce request times for expensive operations. They can also help by doing time-consuming work in advance, such as periodic aggregation of data.
 
 # Message queues

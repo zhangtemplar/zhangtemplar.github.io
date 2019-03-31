@@ -3,15 +3,13 @@ layout: post
 title: Communications
 ---
 
-# Introduction
-
-![Source: OSI 7 layer model](https://camo.githubusercontent.com/1d761d5688d28ce1fb12a0f1c8191bca96eece4c/687474703a2f2f692e696d6775722e636f6d2f354b656f6351732e6a7067)
-
 Different components needs to communicate with each other. Here is a simple comparison of those protocols.
 
 - UDP and TCP are both transport layer protocols. TCP is reliable and connection-based. UDP is connectionless and unreliable.
 - HTTP is in the application layer and normally TCP based, since HTTP assumes a reliable transport.
 - RPC, an application layer protocol, is an inter-process communication that allows a computer program to cause a subroutine or procedure to execute in another address space (commonly on another computer on a shared network), without the programmer explicitly coding the details for this remote interaction. That is, the programmer writes essentially the same code whether the subroutine is local to the executing program, or remote. In an Object-Oriented Programming context, RPC is also called remote invocation or remote method invocation (RMI).
+
+![Source: OSI 7 layer model](https://camo.githubusercontent.com/1d761d5688d28ce1fb12a0f1c8191bca96eece4c/687474703a2f2f692e696d6775722e636f6d2f354b656f6351732e6a7067)
 
 # Remote procedure call (RPC)
 
