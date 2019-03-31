@@ -6,6 +6,7 @@ permalink: /about/
 
 # Summary
 
+  - Experience of building an engineer team from scratch to about 10 engineer;
   - Software developer with management experience and solid programming skills;
   - Experienced researcher in computer vision, machine learning and deep learning.
 
@@ -19,10 +20,11 @@ permalink: /about/
  
 # Skills
 
-  - **Programing**: C, Java, Python, Javascript, Mongodb, React\\
-  - **Computer vision**: motion analysis, action recognition, face recognition, object recognition\\
-  - **Machine learning**: sparse learning, multiple task learning, statistical learning\\
+  - **Programing**: C, Java, Python, Javascript, Mongodb, React
+  - **Computer vision**: motion analysis, action recognition, face recognition, object recognition
+  - **Machine learning**: sparse learning, multiple task learning, statistical learning
   - **Deep Learning**: CNN, RNN, LSTM, GAN, Caffe, Tensorflow, Keras;
+  - **Others**: Linux, Docker, MongoDB, ARM NEON
 
 
 # Education
@@ -38,7 +40,7 @@ permalink: /about/
 
 # Experience
 
-  - Founder, CTO, Button Tech, 2018~now.
+  - Founder & CTO, Button, 2018~now.
   
     - Lead the development of (pharmaceutic and medical device) asset discovery platform;
     - Build a team of six engineers and several data scientists with cross-business collaborations;
