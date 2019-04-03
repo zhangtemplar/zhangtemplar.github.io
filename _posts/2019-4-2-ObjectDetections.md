@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Latency numbers every programmer should know
+title: Object Detection 
 ---
 
 Here is the comparison of the most popular object detection frameworks.

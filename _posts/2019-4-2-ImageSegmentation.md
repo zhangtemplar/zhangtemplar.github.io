@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Latency numbers every programmer should know
+title: Image Segmentation
 ---
 
 There are two types of image segmentation:
