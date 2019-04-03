@@ -31,3 +31,9 @@ Transposed Convolutions or deconvolutions or fractionally strided convolutions c
 Separable Convolutions means a 2D convolution can be decoupled as a sequence of two 1D convolution, one in row and the other one in column. The benfits is the reduction of computational cost, e.g., a separable convolutions will require 6 parameters instead of 9.
 
 ![](https://cdn-images-1.medium.com/max/1200/1*owXMr9DonUUWP1c2Thg_Dw.png)
+
+# grouped convolution
+
+Filter groups or grouped convolution was introduced in [AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks) mainily to address memory issue. Below is illustrated a convolutional layer with 2 filter groups, where each the filters in each filter group are convolved with only half the previous layer’s featuremaps. It works **because filter relationships are sparse.**
+
+![](https://blog.yani.io/assets/images/posts/2017-08-10-filter-group-tutorial/filtergroups2.svg)
