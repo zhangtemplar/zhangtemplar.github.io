@@ -1,0 +1,53 @@
+---
+layout: post
+title: Transfer Learning
+---
+
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/img/ch11/1542974131814.png)
+
+Transfer learning `transfer` your knowledge learned from one domain/task to the other domain/task. For example, the feature extractor of CNN based image classifier can be transfered to CNN based object dection or image segmentation task.
+
+![](https://github.com/scutan90/DeepLearning-500-questions/blob/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/img/ch11/1542973960796.png)
+
+Here we will briefly introduce some typical transfer learning methods.
+
+# Instance based Transfer Learning
+
+Instance based Transfer Learning resample the data according to the frequence of the data in the target domain. Thus this method is limited to scenario where source domain and target domain is similar.
+
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/631e5aab4e0680c374793804817bfbb6.jpg)
+
+# Feature based Transfer Learning
+
+Feature based Transfer Learning tries reduce the difference of the source domain and target domain, by mapping the feature from source domain to target domain, or mapping the feature from source domain and target domain to an unified domain.
+
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/fa08900e89bfd53cc28345d21bc6aca0.jpg)
+
+# Parameter/Model based Transfer Learning
+
+Parameter/Model based Transfer Learning tries to identify whether some parameters can be shared between source domain and target domain.
+
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/602723a1d3ce0f3abe7c591a8e4bb6ec.jpg)
+
+# Relation Based Transfer Learning
+
+Relation Based Transfer Learning assumes the samples in source domain shares the similar relationship as the samples in target domain. It is a less studied area.
+
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/aa10d36f758430dd4ff72d2bf6a76a6c.jpg)
+
+# Distribution Adaptation
+
+Distribution Adaptation applies some transform to make the distribution of data in target domain similar to that of source domain. There are several methods:
+
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/1542812748062.png)
+
+-  Marginal Distribution Adaptation
+$$DISTANCE(Ds,Dt)\approx\lVert P(X_s)-P(X_t)\Vert$$
+- Conditional Distribution Adaptation
+$$DISTANCE(Ds,Dt)\approx\lVert P(y_s|X_s)-P(y_t|X_t)\Vert$$
+- Joint Distribution Adaptation
+$$DISTANCE(Ds,Dt)\approx\lVert P(X_s)-P(X_t)\Vert-\lVert P(y_s|X_s)-P(y_t|X_t)\Vert$$
+- Subspace Alignment
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/1542823474720.png)
+- Manifold Method: try to find a sequence of transform from source domain to target domain on a manifold
+![](https://github.com/scutan90/DeepLearning-500-questions/raw/master/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/ch11_%E8%BF%81%E7%A7%BB%E5%AD%A6%E4%B9%A0/media/103de3658cbb97ad4c24bafe28f9d957.jpg)
