@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Object Detection 
+tags: deep-learning object-detection r-cnn fast-rcnn faster-rcnn mask-rcnn yolo r-fcn ssd
 ---
 
 Here is the comparison of the most popular object detection frameworks.

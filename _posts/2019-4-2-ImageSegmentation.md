@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Image Segmentation
+tags: deep-learning image-segmentation fcn unet segnet dilated-convolutions refinenet pspnet deeplab mask-rcnn skip scribble
 ---
 
 There are two types of image segmentation:
