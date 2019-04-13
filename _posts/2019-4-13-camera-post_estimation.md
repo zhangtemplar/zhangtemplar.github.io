@@ -39,7 +39,7 @@ There are different choices on combining the loss for $R$ and $t$:
 - Self-tuned: $\ell(R, t) = \ell(R)e^{-s_R} + s_R + \ell(t)*e^{-s_t} + s_t$
 - reprojection error: $\ell(R, t) = \lVert\Pi_{R,t}(v)-\Pi_{R^*,t^*}(v)\rVert$
 
-# PostNet
+# PoseNet
 
 > [Posenet: A convolutional network for real-time 6-dof camera relocalization](https://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Kendall_PoseNet_A_Convolutional_ICCV_2015_paper.pdf)
 
