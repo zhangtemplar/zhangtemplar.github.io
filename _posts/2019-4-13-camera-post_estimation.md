@@ -50,6 +50,7 @@ PoseNet is the earliest work which tries to use convolution neural network to so
 # DSAC
 
 > [DSAC -Differentiable RANSAC for Camera Localization](https://arxiv.org/pdf/1611.05705)
+> [Learning Less is More – 6D Camera Localization via 3D Surface Regression](https://arxiv.org/pdf/1711.10228)
 
 Random sample consensus (RANSAC) is widely used in many vision tasks. It typically takes the following steps:
 - generate a pool of hypothese
@@ -67,6 +68,8 @@ The proposed DSAC method is applied in camera post estimation problem, where a C
 
 ![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/a793a603a8f301dadd91b9ada95b6fb71aa89b55/6-Figure2-1.png)
 
+DSAC+ method addresses the problem that the scoring CNN used in DSAC is prone to overfit/collapse. As a result, a inliner count is used instead. To make the count differentiable, sigmoid function replaces the step function. The input is $640\times 480$ image and output is $80\times60$ scene coordinate.
+
 # Spatial LSTM
 
 > [Image-Based Localization with Spatial LSTMs](https://arxiv.org/pdf/1611.07890.pdf)
@@ -77,22 +80,51 @@ Spatial LSTM claims using a $2048$-dim output of CNN to regress for pose in Post
 
 ![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/f6dd8c7e8d38b7a315417fbe57d20111d7b84a16/4-Figure2-1.png)
 
-# MapNet+
+# VidLoc
+
+> [VidLoc: A Deep Spatio-Temporal Model for 6-DoF Video-Clip Relocalization](https://arxiv.org/pdf/1702.06521)
+
+VidLoc proposes to use bidirectionary LSTM to explore the temporal information when computating the camera pose sequence from video. A CNN (similar as PoseNet) is used to extract feature from the image and then feed into LSTM.
+
+![](https://ai2-s2-public.s3.amazonaws.com/figures/2017-08-08/0cf7b9ccb9abe7b5ee9f2fe6b97ea6832fe4ac90/4-Figure2-1.png)
+
+# MapNet
 
 > [Geometry-Aware Learning of Maps for Camera Localization](https://arxiv.org/pdf/1712.03342)
 
-# InLoc
+![](https://research.nvidia.com/sites/default/files/publications/mapnet1_0.png)
 
-> [InLoc: Indoor Visual Localization with Dense Matching and View Synthesis](https://arxiv.org/pdf/1803.10368)
+MapNet improves PoseNet from the following aspects:
+- Log Quaternion Distance: $\ell(R,R^*)=\lVert log(R^*) - log(R^T)\rVert$ is used for rotation angle;
+- pairwise constraint is introduced for the relative pose between two frames, where the ground truth relative pose can be obtained via visual odometry or sensor (e.g., gyro)
+- unlabled data is introduced, where pairwise constraint is applied;
+- to further smooth the trajectory and improve accuracy, a global pose optimization (GPO) is applied for post processing for a window of $k$ frames: $$L_{PGO}(\{p_i\}_{i=1}^T)=\sum_i{l(p_i^*,p_i)}+\sum_{i\neq j}{h(v_{i,j},v_{i,j}^*)}$$
+- For backbone ResNet is used instead of GoogLeNet in PoseNet.
 
 # VLocNet
 
 > [Deep Auxiliary Learning for Visual Localization and Odometry](https://arxiv.org/pdf/1803.03642)
+> [VLocNet++: Deep Multitask Learning for Semantic Visual Localization and Odometry](https://arxiv.org/pdf/1804.08366)
 
-# DSAC++
+![](http://deeploc.cs.uni-freiburg.de/static/images/cover_big.png)
 
-> [Learning Less is More – 6D Camera Localization via 3D Surface Regression](https://arxiv.org/pdf/1711.10228)
+VLocNet improves PoseNet by adding a constraint on the relative pose for two adjacent frames (visual odometry), which is referred as auxillary learning (multi-task learning), similar as VidLoc. ResNet-50 is used as the backbone, and Siamese network on ResNet-50 is used for the constraint on relative pose.
+
+VLocNet++ approach further improves this multi-task learning idea by combining the semantic segmentation task into the pose estimation and visual odometry task.
 
 # NetVLAD
 
 > [NetVLAD: CNN architecture for weakly supervised place recognition](https://www.di.ens.fr/willow/research/netvlad/)
+
+![](https://www.di.ens.fr/willow/research/netvlad/images/vlad_cnn.png)
+
+NetVLAD aims to learn a visual descriptor for place recognition. NetVLAD uses CNN as feature extractor and proposes to use Vector of Locally Aggregated Descriptors (VLAD) to replace existing pooling methods. VLAD is similar to the clustering:
+
+$$V(j,k)=\sum_i{\frac{e^{-\alpha\lvert x_i^j - c_k^j \rvert_2^2}}{\sum_l{e^{-\alpha\lvert x_i^j - c_k^j \rvert_2^2}}}(x_i^j - c_k^j)}$$
+
+where $x_i^j$ is the $j_{th}$ dimension of $i_{th}$ feature.
+
+In order to have sufficient training data, NetVLAD proposes the utilize the week label in Google street time machine data, which provides many panonama images associated with GPS location. NetVLAD assumes that the images with close GPS is likely to be similar to each other (potential positive, though we don't know which one) and images with far GPS is unlikely to be similar to each other (hard negative), that means:
+$$\min_i{d(q, p_i)} +\epsilon <= d(q, p_j)\ \forall j$$
+, which naturally fits to hinge loss:
+$$L=\sum_j{max(0, \min_i{d(q, p_i)} +\epsilon - d(q, p_j))}$$
