@@ -128,3 +128,11 @@ In order to have sufficient training data, NetVLAD proposes the utilize the week
 $$\min_i{d(q, p_i)} +\epsilon <= d(q, p_j)\ \forall j$$
 , which naturally fits to hinge loss:
 $$L=\sum_j{max(0, \min_i{d(q, p_i)} +\epsilon - d(q, p_j))}$$
+
+# MapNet
+
+> [MapNet: An Allocentric Spatial Memory for Mapping Environments](http://openaccess.thecvf.com/content_cvpr_2018/papers/Henriques_MapNet_An_Allocentric_CVPR_2018_paper.pdf)
+
+MapNet proposes to use the recurrent network to remember places visited in the past, as well as to re-localize itself with respect to those, which is updated incrementally using camera observations. In order to localize, these ground-projected camera features are matched against all possible rotations and locations (2D, since z is known).
+
+![](http://www.europe.naverlabs.com/var/siteaccesses/storage/images/media/public-media/images/memory3/1797968-1-eng-GB/memory_extralarge.png)
