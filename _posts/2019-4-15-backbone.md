@@ -1,0 +1,108 @@
+---
+layout: post
+title: Convolution Nerual Network Backbone
+tags: deep-learning cnn convolution-neural-network convolution vgg alexnet inception mobilenet resnet densenet nasnet
+---
+
+Convolution Nerual Network (CNN) has been used in many visual tasks. You may find the networks for varying types of visual tasks share similar set of feature extraction layer, which is referred as backbone. Researchers typically use backbone which has been succesful in ImageNet competion and combine them with different loss functions to solve different type of visual tasks.
+
+In this note, we will review some of the most popular backbones (order by their published time)
+
+# AlexNet
+
+![](https://cdn-images-1.medium.com/max/1536/1*qyc21qM0oxWEuRaj-XJKcw.png)
+
+[AlexNet](https://papers.nips.cc/paper/4824-imagenet-classification-with-deep-convolutional-neural-networks.pdf) (2012) achieves greate success in ImageNet competition. Note since second layer, it split into two groups because of GPU memory limitation (original trained with two GTX 580 with 1.5 GB memory each).
+
+It starts with large kernel size (11x11) with few output channels (96) and changes to small kernel size (3x3) with more output channels (256 or 384).
+
+# VGG16/19
+
+![](https://neurohive.io/wp-content/uploads/2018/11/vgg16-1-e1542731207177.png)
+
+[VGG16/19](https://arxiv.org/abs/1409.1556) (2014) is much deeper than AlexNet and uses only 3x3 by kernels. You could find VGG16/19 network can be divided into several groups, where each group has the same number of output channels and spatial resolution; between each group a 2x max pooling is applied and also doubles the number of output channels until reached 512.
+
+# GoogLeNet/Inception V1
+
+![](https://cdn-images-1.medium.com/max/2600/1*ZFPOSAted10TPd3hBQU8iQ.png)
+
+[GoogLeNet](https://ai.google/research/pubs/pub43022) (2015) or Inception V1 explores the idea of network in network and make the network even deeper. It is consisted of `Inception` blocks (shown below) and outputs of intemediate layers are also considerred in the loss function. In each inception block, different kernel sizes are utilized and combined via concatenation.
+
+![](https://i.stack.imgur.com/BVDcs.png)
+
+# Inception V2 & V3
+
+[Inception V2 & V3](https://arxiv.org/pdf/1512.00567v3.pdf) (2017) has a number of upgrades which increased the accuracy and reduced the computational complexity:
+- Using two 3x3 convolution to replace 5x5 convolution
+![](https://cdn-images-1.medium.com/max/1600/1*RzvmmEQH_87qKWYBFIG_DA.png)
+- Using separable filters, e.g., 3x3 convolution is replaced by 1x3 convolution and then 3x1 convolution
+![](https://cdn-images-1.medium.com/max/1600/1*hTwo-hy9BUZ1bYkzisL1KA.png)
+- The filter banks in the module were expanded (made wider instead of deeper) to remove the representational bottleneck.
+![](https://cdn-images-1.medium.com/max/1600/1*DVXTxBwe_KUvpEs3ZXXFbg.png)
+
+# Inception v4
+
+[Inception v4](https://arxiv.org/pdf/1602.07261.pdf) (2017) makes the modules more uniform. It is consisted of two blocks:
+- inception module
+![](https://cdn-images-1.medium.com/max/2600/1*KrBAIZjcrlXu6JPiPQj2vQ.jpeg)
+- reduction block
+![](https://cdn-images-1.medium.com/max/2400/1*2Hdo2wG3ILUoYaorJdlR-Q.jpeg)
+
+# ResNet
+
+[ResNet](https://arxiv.org/abs/1512.03385) (2016) addresses the problem of training deep neural network, where typically gradient vanishing make training deep neural network very hard. To address this problem, residual block is proposed. By having $y = f(x) + x$, inserting residual network into any network should never degrades the performance.
+
+![](https://neurohive.io/wp-content/uploads/2019/01/resnet-e1548261477164.png)
+
+![](https://cdn-images-1.medium.com/max/1200/1*2ns4ota94je5gSVjrpFq3A.png)
+
+# Xception
+
+[Xception](https://arxiv.org/abs/1610.02357) (2017) mainly focus on the efficiency of convolution neural network by introducing the depthwise separable convolutions. Namely a convolution with kxk kernel and n output channels is divided into two stage:
+- depthwise separable convolutions: convolution with kxk kernel is performed for each channel independently. This stage mainly extracts spatial information.
+- pointwise convolution: convolution with 1x1 kernel is performed for all channel together. This stage mainly fuses the information cross channels.
+
+The computational cost is $\frac{1}{k\times k} + \frac{1}{n}$ of the original convolution.
+
+![](https://cdn-images-1.medium.com/max/1600/1*SRBSbojkg48DTUMcP5VVHg.jpeg)
+
+# MobileNet
+
+[MobileNet](https://arxiv.org/abs/1704.04861) (2017) applies the same idea to design a network effcient enough to run on a mobile device.
+
+![](https://raw.githubusercontent.com/joshua19881228/my_blogs/master/Computer_Vision/Reading_Note/figures/Reading_Note_20170719_MobileNet_0.png)
+
+
+# Inception-ResNet
+
+[Inception-ResNet](https://arxiv.org/pdf/1602.07261.pdf) (2017) applies the idea of residual blocks to Inception net. It is consisted of two blocks:
+- inception module
+![](https://cdn-images-1.medium.com/max/2600/1*WyqyCKA4mP1jsl8H4eHrjg.jpeg)
+- reduction block
+![](https://cdn-images-1.medium.com/max/2400/1*QY-g6oMF_6-v7N668HNvvA.jpeg)
+
+For differences of all types of Inception network, please read this awesome article [A Simple Guide to the Versions of the Inception Network](https://towardsdatascience.com/a-simple-guide-to-the-versions-of-the-inception-network-7fc52b863202)
+
+# DenseNet
+
+[DenseNet](https://arxiv.org/abs/1608.06993) (2017) addresses the gradient vanish problem in a different way compared with ResNet: ResNet using `sum` to combine the output of previous layer and output of current layer as the input of next layer; DenseNet using `concatenation` to combine the outputs of different layers. In a dense block of DenseNet, the input of layer is the concatnation of outputs of **ALL** previous layers.
+
+![](https://peltarion.com/static/densenet_a.jpg)
+
+It alleviates the vanishing-gradient problem, strengthen feature propagation, encourage fea- ture reuse, and substantially reduce the number of parameters. The reason for less parameters is that, with dense net narrower filters can be used (less output channels).
+
+Since the number of input channels increase quadratically with regards to layer within the dense block, a `bottleneck` layer is introduced to reduce the number of feature channels, which is essentially convolution layer with $1\times 1$ kernel size and less output channels than input ones.
+
+![](https://cdn-images-1.medium.com/max/1600/1*SSn5H14SKhhaZZ5XYWN3Cg.jpeg)
+
+# NASNet
+
+[NASNet](https://arxiv.org/pdf/1707.07012) (2017) refers to the network architecture leaned via network architecture learning methods. NASNet architecture is composed of two types of layers: Normal Layer (left), and Reduction Layer (right). These two layers are designed by AutoML.
+
+![](https://2.bp.blogspot.com/-zFPQEtthyE0/WfuFgDe4VUI/AAAAAAAACIU/4iCF5sNAJuIprvAWnk9uZQK3vTJX5tgcwCLcBGAs/s1600/image1.png)
+
+# MobileNet V2
+
+[MobileNet V2](https://arxiv.org/abs/1801.04381) (2018) combines the MobileNet V1 and ResNet: in addition to using depthwise separable convolution as efficient building blocks, using linear bottlenecks between the layers (to reduce the feature channels), and using shortcut connections between the bottlenecks.
+
+![](https://1.bp.blogspot.com/-M8UvZJWNW4E/WsKk-tbzp8I/AAAAAAAAChw/OqxBVPbDygMIQWGug4ZnHNDvuyK5FBMcQCLcBGAs/s640/image5.png)
