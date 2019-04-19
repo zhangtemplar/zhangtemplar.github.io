@@ -46,6 +46,13 @@ $$\frac{K_x \times K_y \times M + N \times M}{K_x \times K_y \times M \times N}=
 
 ![](https://cdn-images-1.medium.com/max/1600/1*L97mX8J7dBNPtRwb5VwqUw.png)
 
+# MobileNetV2
+
+> [MobileNetV2: Inverted Residuals and Linear Bottlenecks](https://arxiv.org/pdf/1801.04381.pdf)
+
+![](https://camo.githubusercontent.com/b5134a2b9100ca83833437ed61aa4325dbab322f/68747470733a2f2f6873746f2e6f72672f776562742f776c2f796f2f737a2f776c796f737a716e77733538697464346f6a743163717437736e672e706e67)
+
+The difference of MobileNet V2 to V1 is the inverted residual with linear bottleneck. This module takes as an input a low-dimensional compressed representation which is first expanded to high dimension and filtered with a lightweight depthwise convolution. Features are subsequently projected back to a low-dimensional representation with a linear convolution.
 
 # Factorized Network
 
