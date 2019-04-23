@@ -1,0 +1,99 @@
+---
+layout: post
+title: LinkedIn Recruiter Search and Recommendation Systems
+tags: deep-learning recommendation linkedin
+---
+
+The LinkedIn Recruiter product provides a ranked list of candidates corresponding to a search request in the form of a query, a job posting, or a recommended candidate. Given a search request, candidates that match the request are selected and then ranked based on a variety of factors (such as the similarity of their work experience/skills with the search criteria, job posting location, and the likelihood of a response from an interested candidate) using machine-learned models in multiple passes.
+
+![](<https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/04/talentai2.png>)
+
+> Source: [The AI Behind LinkedIn Recruiter Search and Recommendation Systems](https://engineering.linkedin.com/blog/2019/04/ai-behind-linkedin-recruiter-search-and-recommendation-systems)
+
+# Objective
+
+For each recommended candidate, the recruiter can perform the following actions:
+- View the candidate’s profile,
+- Save the profile to a hiring project (as a potential fit), and,
+- Send an InMail to the candidate.
+
+The challenges of associated with talent search and recommendation systems compared with other recommendation system:
+- the talent search domain requires mutual interest between the recruiter and the candidate in the context of the job opportunity.
+- the underlying query to the talent search system could be quite complex, combining several structured fields, such as canonical title(s), canonical skill(s), and company name, along with unstructured fields, such as free-text keywords.
+- personalization is of the essence to a talent search system where we need to model the intents and preferences of recruiters concerning the type of candidates they are looking for.
+
+## Measure the mutual interesting between the recruiter and candidates
+
+It is crucial to use appropriate metrics for model optimization, as well as for online A/B testing. A new objective is defined, InMail Accept, which occurs when a candidate received an InMail from a recruiter and replies with a positive response. The InMail accept is used as as an indication of two-way interest, which may lead to the candidate receiving a job offer and accepting it. The fraction of the top k ranked candidates that received and accepted an InMail (viewed as precision@k) is then used as the main evaluation measure when we experiment with new models for the Recruiter product
+
+## Optimize the query interface
+
+Depending on the application, the query could either consist of an explicitly entered query text and selected facets (Recruiter Search or “Talent Search” in the research literature), or be implicit in the form of a job opening or ideal candidate(s) for a job (Recommended Matches).
+
+In Recruiter Search, to assist our users with query formulation, related entities that the user might be interested in, e.g., recommending titles like “Data Scientist” and skills like “Data Mining”, are suggested to recruiters searching for title “Machine Learning Engineer.” With a given query, the goal is to determine a ranked list of the most relevant candidates in real time among hundreds of millions of semi-structured candidate profiles. Consequently, robust standardization, intelligent query understanding and query suggestion, scalable indexing, high-recall candidate selection, effective ranking algorithms, and efficient multi-pass scoring/ranking systems are essential.
+
+# Methodologies
+
+## Non-linear modeling with Gradient Boosted Decision Trees
+
+The earliest machine learning model for LinkedIn Recruiter search ranking was a linear model. Linear models are the easiest to debug, interpret, and deploy, and thus a good choice in the beginning. But linear models cannot capture non-linear feature interactions well.
+
+Gradient Boosted Decision Trees (GBDT) is now used to unleash the power of our data. GBDT models feature interaction explicitly through a tree structure. Aside from a larger hypothesis space, GBDT has a few other advantages, like working well with feature collinearity, handling features with different ranges and missing feature values, etc.
+
+## Context-aware ranking with pairwise learning-to-rank
+
+To add awareness of the search context to the GBDT models, the following improvements are used. 
+- For searcher context, some personalization features are added.
+- For query context, more query-candidate matching features are added, some directly leveraged from LinkedIn’s flagship search product.
+- And very importantly, GBDT models is learned with a pairwise ranking objective, to compare candidates within the same context, i.e., the same search request.
+  - Pairwise optimization compares pairs of impressions within the same search query.
+  - Pointwise optimization assumes all the impressions are independent, no matter if they are in the same search query or not. 
+For this reason, pairwise ranking is more aware of the context. Application of contextual features and pairwise GBDT models helped to achieve a low two-digit (in the tens) percentage improvement in the recruiter-candidate engagement metrics.
+
+## Deep and representation learning efforts
+
+While GBDT provides quite a strong performance, it poses the following challenges:
+- It is quite non-trivial to augment a tree ensemble model with other trainable components, such as embeddings for discrete features.
+- Tree models do not work well with sparse id features such as skill ids, company ids, and member ids that we may want to utilize for talent search ranking.
+> Since a sparse feature is non-zero for a relatively small number of examples, it has a small likelihood of being chosen by the tree generation at each boosting step, especially since the learned trees are shallow in general.
+- Tree models lack flexibility in model engineering. The novel loss functions, or augment the current objective function with other terms are not easily achievable with GBDT models.
+- Another significant challenge for Talent Search modeling pertains to the sheer number of available entities that a recruiter can include as part of their search, and how to utilize them for candidate selection as well as ranking.
+> Instead, it is more desirable to utilize semantic representations of entities—for example, in the form of low dimensional embeddings. Such representations allow for numerous sparse entities to be better incorporated as part of a machine learning model.
+
+# Graph
+
+![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/04/talentai3.png)
+
+LinkedIn Economic Graph is a graph with entities (candidates, companies) as nodes and, where the edge weights between entities is computed according to the number of LinkedIn members that have the two entities listed together in their profile (e.g., they have both of the skills or worked at both companies on two ends of the edges, etc.).
+
+[Large-Scale Information Network Embeddings (LINE)](https://arxiv.org/pdf/1503.03578.pdf) approach is used to learn a low-dimenion embedding for the LinkedIn Economic Graph. LINE can optimize for first-order proximity and second-order proximity, is applicable to both directed and undirected graphs, and can scale well.
+
+The generated embeddings as part of the features on which we train GBDT models, which have shown low single-digit improvements over engagement metrics. The ranking lift, however, was not statistically significant.
+
+The hypothesis is that, because the retrieval process is doing exact match based on title ids, the embedding-based similarity won’t differentiate the retrieved results by much. This motivated us to apply this to the retrieval stage. We implemented a query expansion strategy that adds results with semantically similar titles, like “Software Developer” for “Software Engineer,” when the number of returned results from the original query is too small.
+
+# Personalization
+## Entity-level personalization with GLMix
+
+![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/04/talentai4.png)
+
+For personalization, two more features are used and model is trained per recruiter and contract.
+
+## In-session online personalization
+
+![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/04/talentai5.png)
+
+Above is the architecture for such a system, which first separates the potential candidate space for the job into skill groups. Then, a multi-armed bandit model is utilized to understand which group is more desirable based on the recruiter’s current intent, and the ranking of candidates within each skill group is updated based on the feedback.
+
+# System Design and Architecture
+
+LinkedIn has built a search stack on top of Lucene called Galene, and contributed to various plug-ins, including capability to live-update search index. The search index consists of two types of fields:
+- The inverted field: a mapping from search terms to the list of entities (members) that contain them.
+- The forward field: a mapping from entities (members) to metadata about them.
+
+- Talent Search
+![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/04/talentai7.png)
+- Recruiter Search
+![](https://content.linkedin.com/content/dam/engineering/site-assets/images/blog/posts/2019/04/talentai8.png)
+  - L1: Scoops into the talent pool and scores/ranks candidates. In this layer, candidate retrieval and ranking are done in a distributed fashion.
+  - L2: Refines the short-listed talent to apply more dynamic features using external caches.
