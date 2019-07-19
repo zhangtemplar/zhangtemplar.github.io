@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Face Detection, Landmark Detection in CVPR 2019
-tags: deep-learning face-attribute expression-transfer style-transfer
+title: Face Reconstruction in CVPR 2019
+tags: deep-learning face-reconstruction 3dmm
 ---
 
 ![](http://cvlab.cse.msu.edu/images/reconstructionTeaser.png)
