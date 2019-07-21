@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Face Detection, Landmark Detection in CVPR 2019
+title: Face Attribute in CVPR 2019
 tags: deep-learning face-attribute expression-transfer style-transfer
 ---
 
