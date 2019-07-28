@@ -64,7 +64,7 @@ Factorized network is Similar as MobileNet, but also has the idea of residual ne
 
 ![](https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oW1eynFBETaFUuCYOIMtaVZubEoAXggyyy3iaZySRJWZoTCibERrjiaH2OP8uO2Y8WsO1bjicg6zHqJaQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-MixNet finds larger kernel size (up to 9x9) tends to improve the performance on image classification and object detection compared with 3x3 kernel size used in MobileNet V3. As a result, MixNet proposes to have convolution with different kernel size in parallel and combined via concatenation.
+MixNet finds larger kernel size (up to 9x9) tends to improve the performance on image classification and object detection compared with 3x3 kernel size used in MobileNet V3. As a result, MixNet proposes to have convolution with different kernel size in parallel and combined via concatenation, namely MdConv. MdConv is similar to group wise convolution, where each group has different kernel size.
 
 ```
 def mdconv(x, filters, **args):
