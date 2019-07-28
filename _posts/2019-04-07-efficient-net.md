@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Effcient Deep Neural Network
-tags: deep-learning mobilenet squeezenet flattened-network factorized-network xception-network
+tags: deep-learning mobilenet squeezenet flattened-network factorized-network xception-network mixnet
 ---
 
 In this post, we will introduce some neural networks which are suitable for running on mobile devices.
@@ -59,3 +59,21 @@ The difference of MobileNet V2 to V1 is the inverted residual with linear bottle
 > Factorized convolutional neural networks
 
 Factorized network is Similar as MobileNet, but also has the idea of residual network.
+
+# [MixNet](https://arxiv.org/abs/1907.09595)
+
+![](https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oW1eynFBETaFUuCYOIMtaVZubEoAXggyyy3iaZySRJWZoTCibERrjiaH2OP8uO2Y8WsO1bjicg6zHqJaQ/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+MixNet finds larger kernel size (up to 9x9) tends to improve the performance on image classification and object detection compared with 3x3 kernel size used in MobileNet V3. As a result, MixNet proposes to have convolution with different kernel size in parallel and combined via concatenation.
+
+```
+def mdconv(x, filters, **args):
+    G = len(filters)
+    y = []
+    for xi, fi in zip(tf.split(x, G, axis=-1), filters):
+        y.append(tf.nn.depthwise_conv2d(xi, fi, **args))
+    return tf.concat(y, axis=-1)
+```
+
+Implementations are already available at [Tensorflow](https://github.com/tensorflow/tpu/tree/master/models/official/mnasnet/mixnet) and [PyTorch](https://github.com/rwightman/pytorch-image-models)
+
