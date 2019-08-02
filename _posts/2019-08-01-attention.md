@@ -12,10 +12,6 @@ For attention in image domain, the relationships is computed among different spa
 
 In the sections below, we will cover some representative works.
 
-# [Attention to Scale: Scale-aware Semantic Image Segmentation](http://arxiv.org/abs/1511.03339)
-
-> Incorporating multi-scale features in fully convolutional neural networks (FCNs) has been a key element to achieving state-of-the-art performance on semantic image segmentation. One common way to extract multi-scale features is to feed multiple resized input images to a shared deep network and then merge the resulting features for pixelwise classification. In this work, we propose an attention mechanism that learns to softly weight the multi-scale features at each pixel location. We adapt a state-of-the-art semantic image segmentation model, which we jointly train with multi-scale input images and the attention model. The proposed attention model not only outperforms average- and max-pooling, but allows us to diagnostically visualize the importance of features at different positions and scales. Moreover, we show that adding extra supervision to the output at each scale is essential to achieving excellent performance when merging multi-scale features. We demonstrate the effectiveness of our model with extensive experiments on three challenging datasets, including PASCAL-Person-Part, PASCAL VOC 2012 and a subset of MS-COCO 2014.
-
 # [Squeeze-and-Excitation module](http://arxiv.org/abs/1709.01507)
 
 ![](https://pic4.zhimg.com/80/v2-2e8c37ad7e40b7f1cdfd81ecbae4e95f_hd.jpg)
