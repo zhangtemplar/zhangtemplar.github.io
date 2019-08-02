@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Video Object Segmentation
+title: Self Attention
 tags: deep-learning attention
 ---
 
