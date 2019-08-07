@@ -10,6 +10,14 @@ The most sucessfull single stage object detection algorithms, e.g., [YOLO](http:
 
 Though much faster than their two-stage counterparts, single stage algorithms' speed and performance is still limited by the choice of the anchor boxes: fewer than anchor leads better speed but deteroiates the accuracy. As a result, many new works are trying to design anchor free object detection algorithms.
 
+The table summarizes the performance of some of the best anchor free methods:
+| Methods | mAP | FPS | Code |
+| FSAF | 42.9 | 5.3 | N.A. |
+| FCOS | 43.2 | Nona | [tianzhi0549/FCOS](https://github.com/tianzhi0549/FCOS) |
+| CenterNet：Objects as Points | 42.1 | 7.8 | [xingyizhou/CenterNet](https://github.com/xingyizhou/CenterNet) |
+| **CenterNet: Keypoint Triplets for Object Detection** | 44.9 | 3 | [Duankaiwen/CenterNet](https://github.com/Duankaiwen/CenterNet) |
+| **AlignDet** | 44.1 | 5.6 | N.A | 
+
 # UnitBox: An Advanced Object Detection Network
 
 ![](https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oVtmWMCMAYFgyQHf8Yn8V0LzOcSkG8Bnd39q5UYWylv8sEayaWWZqIQOpQ7xuVibPCPYt2G9l3JPIg/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
