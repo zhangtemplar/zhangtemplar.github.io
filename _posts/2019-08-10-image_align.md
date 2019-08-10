@@ -50,4 +50,4 @@ Instead of requiring the ground truth transform label as supervision signal, [Un
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW85v9gh2Dv2npxyiagtYaQiabqpJaMuc54fzoQjhguH2XRoMNE55Edrtj4RK2VaRHicTJlkXxbicn1UiaQ/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
-[An Artificial Agent for Robust Image Registration](https://arxiv.org/pdf/1611.10336.pdf) proposed a reinforcement learning based approach for learning the transform between two images, where the state is the two images and the action is the transform. Similar idea was also studied in [Robust non-rigid registration through agent-based action learning」（https://hal.inria.fr/hal-01569447/document）
+[An Artificial Agent for Robust Image Registration](https://arxiv.org/pdf/1611.10336.pdf) proposed a reinforcement learning based approach for learning the transform between two images, where the state is the two images and the action is the transform. Similar idea was also studied in [Robust non-rigid registration through agent-based action learning](https://hal.inria.fr/hal-01569447/document）
