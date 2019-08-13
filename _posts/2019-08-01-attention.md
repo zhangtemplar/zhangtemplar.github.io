@@ -59,3 +59,35 @@ The attention module can be viewed as an extension of [Dual Attention Network fo
 > Both convolutional and recurrent operations are building blocks that process one local neighborhood at a time. In this paper, we present non-local operations as a generic family of building blocks for capturing long-range dependencies. Inspired by the classical non-local means method in computer vision, our non-local operation computes the response at a position as a weighted sum of the features at all positions. This building block can be plugged into many computer vision architectures. On the task of video classification, even without any bells and whistles, our non-local models can compete or outperform current competition winners on both Kinetics and Charades datasets. In static image recognition, our non-local models improve object detection/segmentation and pose estimation on the COCO suite of tasks. Code is available at https://github.com/facebookresearch/video-nonlocal-net .
 
 The attention module is similar to spatial part of [Dual Attention Network for Scene Segmentation](http://arxiv.org/abs/1809.02983) and is also applied after the ResNet. For implementation, please refer to [facebookresearch/video-nonlocal-net](https://github.com/facebookresearch/video-nonlocal-net)
+
+# [Learn to Pay Attention](https://arxiv.org/pdf/1804.02391.pdf)
+
+![](https://miro.medium.com/max/1232/0*8r63L3yR66SVBgJR)
+
+In `Learn to Pay Attention`, the attention map is computed between the final feature map and the feature map under compute. The motivation is that, the final feature map (referred as global feature) is more close to the actual task, thus reflects the importance of each feature. More specifically, `Learn to Pay Attention` modify from VGG-16 network, where attention maps are computed for Layer 7, 10 and 13. The attention weighted feature maps are combined together as the final feature vector.
+
+Assume the global feature (g) is a tensor of N x C_g x 1 x 1, the feature map under compute (l) is a tensor of N x C_l x h x w, then the attention weighted feature map is a tensor of N x C_g x 1 x 1.
+
+```python
+class LinearAttentionBlock(nn.Module):
+    def __init__(self, in_features, normalize_attn=True):
+        super(LinearAttentionBlock, self).__init__()
+        self.normalize_attn = normalize_attn
+        self.op = nn.Conv2d(in_channels=in_features, out_channels=1, kernel_size=1, padding=0, bias=False)
+    def forward(self, l, g):
+        N, C, W, H = l.size()
+        c = self.op(l+g) # batch_sizex1xWxH
+        if self.normalize_attn:
+            a = F.softmax(c.view(N,1,-1), dim=2).view(N,1,W,H)
+        else:
+            a = torch.sigmoid(c)
+        g = torch.mul(a.expand_as(l), l)
+        if self.normalize_attn:
+            g = g.view(N,C,-1).sum(dim=2) # batch_sizexC
+        else:
+            g = F.adaptive_avg_pool2d(g, (1,1)).view(N,C)
+        return c.view(N,1,W,H), g
+```
+
+[code](https://github.com/SaoYan/LearnToPayAttention)
+
