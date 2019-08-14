@@ -66,28 +66,13 @@ The attention module is similar to spatial part of [Dual Attention Network for S
 
 In `Learn to Pay Attention`, the attention map is computed between the final feature map and the feature map under compute. The motivation is that, the final feature map (referred as global feature) is more close to the actual task, thus reflects the importance of each feature. More specifically, `Learn to Pay Attention` modify from VGG-16 network, where attention maps are computed for Layer 7, 10 and 13. The attention weighted feature maps are combined together as the final feature vector.
 
-Assume the global feature (g) is a tensor of N x C_g x 1 x 1, the feature map under compute (l) is a tensor of N x C_l x h x w, then the attention weighted feature map is a tensor of N x C_g x 1 x 1.
+Assume the global feature (g) is a tensor of N x C_g, the feature map under compute (l) is a tensor of N x C_l x H x W, then the attention will be computed as:
 
-```python
-class LinearAttentionBlock(nn.Module):
-    def __init__(self, in_features, normalize_attn=True):
-        super(LinearAttentionBlock, self).__init__()
-        self.normalize_attn = normalize_attn
-        self.op = nn.Conv2d(in_channels=in_features, out_channels=1, kernel_size=1, padding=0, bias=False)
-    def forward(self, l, g):
-        N, C, W, H = l.size()
-        c = self.op(l+g) # batch_sizex1xWxH
-        if self.normalize_attn:
-            a = F.softmax(c.view(N,1,-1), dim=2).view(N,1,W,H)
-        else:
-            a = torch.sigmoid(c)
-        g = torch.mul(a.expand_as(l), l)
-        if self.normalize_attn:
-            g = g.view(N,C,-1).sum(dim=2) # batch_sizexC
-        else:
-            g = F.adaptive_avg_pool2d(g, (1,1)).view(N,C)
-        return c.view(N,1,W,H), g
-```
+- project the local feature map to N x C_g x H x W via a 1x1 convolution;
+- compute the attention map N x 1 x H x W via a 1x1 convolution on l + g;
+- normalize the attention map via softmax
+- apply the normalize attention map to l
+- reduce the spatial dimension for the final vector
 
 [code](https://github.com/SaoYan/LearnToPayAttention)
 
