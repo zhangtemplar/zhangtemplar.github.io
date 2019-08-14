@@ -76,3 +76,7 @@ Assume the global feature (g) is a tensor of N x C_g, the feature map under comp
 
 [code](https://github.com/SaoYan/LearnToPayAttention)
 
+# Reference
+
+- [Attention in Neural Networks and How to Use It](http://akosiorek.github.io/ml/2017/10/14/visual-attention.html)
+- [Attention? Attention!](https://lilianweng.github.io/lil-log/2018/06/24/attention-attention.html)
