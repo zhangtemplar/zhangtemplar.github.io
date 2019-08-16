@@ -123,3 +123,11 @@ CornerNet-Lite：CornerNet-Saccade（attention mechanism）+ CornerNet-Squeeze
 ![](https://mmbiz.qpic.cn/mmbiz_jpg/yNnalkXE7oVtmWMCMAYFgyQHf8Yn8V0Lia8OfXXecHXMfwfzeEogOCNncoLMmliabHYjRcN5OkiakOYAYSylibuHxA/640?wx_fmt=jpeg&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
 
 As GA-RPN, the bounding box is defined by its center and shape, which is computed from two branches of the neural network.
+
+# [Matrix Nets](https://arxiv.org/abs/1908.04646)
+
+![](https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW9eTcrcwFsib63LiacvgWwib9lZCVgVNXvTYfic0cnRLciap91gibXTiaQYs57M6ibCtCzyhTOuzk4IiabP7nw/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)
+
+Maxtrix Nets addresses different aspect ratio of the objects. Compared with image pyramid, it generates feature across different scales and aspect ratio, like a matrix. Especially, for feature x_{ij} at layer i and j, feature x_{i+1, j+1} is generated via a 3x3 kernel with stride 2x2, feature x_{i+1, j} is generated via a 3x3 kernel with stride 2x1 and feature x_{i, j+1} is generated via a 3x3 kernel with stride 1x2. Note those three convolutions share the same parameter.
+
+To detect objects, it utilizes the similar idea of center net: the location of top left corner and bottom right corner are detected, the centerness is also computed. Then the result for feature x_{i+k, i+[0:k]} and x_{i+[0:k], i+k} is aggreated via nonmax suppression.
