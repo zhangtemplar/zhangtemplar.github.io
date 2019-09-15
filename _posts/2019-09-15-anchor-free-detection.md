@@ -134,7 +134,7 @@ To detect objects, it utilizes the similar idea of center net: the location of t
 
 ## [FreeAnchor](https://arxiv.org/pdf/1909.02466)
 
-![https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb1X6L4suDksZG2icRR5K5m4YZ0jaCiatic4oXNzh1oh9w6c685Nx26alBfPfBic0ibPVQ3iaCEJ4NwbQ14g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1])
+![https://mmbiz.qpic.cn/mmbiz_png/UicQ7HgWiaUb1X6L4suDksZG2icRR5K5m4YZ0jaCiatic4oXNzh1oh9w6c685Nx26alBfPfBic0ibPVQ3iaCEJ4NwbQ14g/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1]()
 
 > Modern CNN-based object detectors assign anchors for ground-truth objects under the restriction of object-anchor Intersection-over-Unit (IoU). In this study, we propose a learning-to-match approach to break IoU restriction, allowing objects to match anchors in a flexible manner. Our approach, referred to as FreeAnchor, updates hand-crafted anchor assignment to "free" anchor matching by formulating detector training as a maximum likelihood estimation (MLE) procedure. FreeAnchor targets at learning features which best explain a class of objects in terms of both classification and localization. FreeAnchor is implemented by optimizing detection customized likelihood and can be fused with CNN-based detectors in a plug-and-play manner. Experiments on MS-COCO demonstrate that FreeAnchor consistently outperforms their counterparts with significant margins.
 
