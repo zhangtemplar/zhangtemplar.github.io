@@ -13,7 +13,7 @@ permalink: /about/
 # Contact Information
 
  - Adress: San Jose, CA
- - Email: zhangtemplar_AT_gmail.coma
+ - Email: zhangtemplar_AT_gmail.com
  - [Linked Profile](https://www.linkedin.com/in/qiang-zhang-2164b316)
  - [Google Scholar](https://scholar.google.com/citations?user=88s55KAAAAAJ&hl=en)
  - [Resume in Dropbox](https://www.dropbox.com/s/rk8l1nuyxij5on3/CV_QZ.pdf?dl=0)
@@ -40,7 +40,10 @@ permalink: /about/
 
 # Experience
 
-  - Founder & CTO, Button, 2018~now.
+  - Manager, Facebook, 2019~now
+    - Lead a team to develop face tracking technology to drive AR/VR products, Facebook App, IG and Messengers.
+
+  - Founder & CTO, Button, 2018~2019.
   
     - Lead the development of (pharmaceutic and medical device) asset discovery platform;
     - Build a team of six engineers and several data scientists with cross-business collaborations;
