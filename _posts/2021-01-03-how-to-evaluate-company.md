@@ -12,19 +12,18 @@ Then the question is what is the value of the invested company and/or how to cal
 
 Discounted cash flow (DCF) is a very important in investment. It computes the current value of future cash based on interest rate or something equvilant. For example, assume the anual interest rate is k, then the value of x in t years would be x*(1+k)^(-t). Here we assume the interest rate is fixed.
 
-![](https://latex.codecogs.com/gif.latex?DCF(x,k,t)=\frac{x}{(1&plus;k)^t})
+$$ DCF(x,k,t)=\frac{x}{(1&plus;k)^t} $$
 
 Accordingly the total DCF could be computed sum of DCF since now, which is
-
-![](https://latex.codecogs.com/gif.latex?totalDCF(k,t)=\sum_{t=0}^{t=T}{DCF(x_t,k,t)})
+$$ totalDCF(k,t)=\sum_{t=0}^{t=T}{DCF(x_t,k,t)} $$
 
 Here x_t is the cash flow genrated in year t and anual interest rate is also fixed. For simplicity, we assume the cash flow generated for each year is fixed, that means x_t=x. The we have:
 
-![](https://latex.codecogs.com/gif.latex?totalDCF(x,k,t)=\sum_{t=0}^{t=T}{DCF(x_t,k,t)}=\sum_{t=0}^{t=T}{\frac{x}{(1&plus;k)^t}})
+$$ totalDCF(x,k,t)=\sum_{t=0}^{t=T}{DCF(x_t,k,t)}=\sum_{t=0}^{t=T}{\frac{x}{(1&plus;k)^t}} $$
 
 If we are looking at the whole life span of the investment or assume we hold the investment sufficiently long, we have T equal to infinity and the total DCF is then
 
-![](https://latex.codecogs.com/gif.latex?totalDCF(x,k,t)=x\frac{1}{1-\frac{1}{1&plus;k}}=x\frac{1&plus;k}{k})
+$$ totalDCF(x,k,t)=x\frac{1}{1-\frac{1}{1&plus;k}}=x\frac{1&plus;k}{k} $$
 
 The total DCF should be price we are willing to pay for that investment, which means if we pay this amount to fully own the company and we should be able to earn back this money in the future. For investment, we may want to apply some discount to the investment for safety margin, e.g., 60%.
 
