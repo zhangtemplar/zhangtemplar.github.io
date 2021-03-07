@@ -31,8 +31,8 @@ where
 - C*=Call option price*
 - S*=Current stock (or other underlying) price*
 - K*=Strike price*
-- r*=Risk-free interest rate*
-- t*=Time to maturity*
+- r*=Risk-free anual interest rate*
+- t*=Years to maturity*
 
 > the Black Scholes model is only used to price European options and does not take into account that U.S. options could be exercised before the expiration date
 
