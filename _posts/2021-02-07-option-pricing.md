@@ -21,7 +21,7 @@ The Black-Scholes model makes certain assumptions:
 The Black Scholes call option formula is calculated by multiplying the stock price by the cumulative standard normal probability distribution function.
 
 $$\begin{align*}
-C&=S_t norm(d_1)-Ke^{-rt}norm(d_2) \\ 
+C&=S_t norm_cdf(d_1)-Ke^{-rt}norm_cdf(d_2) \\ 
  d_1&=\frac{\ln{\frac{S_t}{K}}+(r+\frac{\sigma_v^2}{2})t}{\sigma_s\sqrt{t}} \\ 
  d_2&=d_1-\sigma_s\sqrt{t} 
 \end{align*}$$
@@ -33,6 +33,7 @@ where
 - K*=Strike price*
 - r*=Risk-free anual interest rate*
 - t*=Years to maturity*
+- norm_cdf*=cumulative density function of normal distribution*
 
 > the Black Scholes model is only used to price European options and does not take into account that U.S. options could be exercised before the expiration date
 
