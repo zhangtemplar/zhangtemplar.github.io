@@ -3,7 +3,7 @@ layout: post
 title: Swin Transformer
 tags: deep-learning transformer swin-transformer self-attention local window shifted-window cyclic-shift object-detection image-classification instance-segmentation semantic-segmentation
 ---
-[ViT](vit/) provides the possibilities of using transformers along as a backbone for vision tasks. However, due to transformer conduct global self attention, where the relationships of a token and all other tokens are computed, its complexity grows exponentially with image resolution. This makes it inefficient for image segmentation or semantic segmentation task. To this end, twin transformer is proposed in  [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030), which addresses the computation issue by conducting self attention in a local window and has multi-layers for windows at different resolution.
+[ViT](/vit/) provides the possibilities of using transformers along as a backbone for vision tasks. However, due to transformer conduct global self attention, where the relationships of a token and all other tokens are computed, its complexity grows exponentially with image resolution. This makes it inefficient for image segmentation or semantic segmentation task. To this end, twin transformer is proposed in  [Swin Transformer: Hierarchical Vision Transformer using Shifted Windows](https://arxiv.org/abs/2103.14030), which addresses the computation issue by conducting self attention in a local window and has multi-layers for windows at different resolution.
 
 # Network Architecture
 
