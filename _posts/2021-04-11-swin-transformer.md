@@ -13,18 +13,18 @@ The image below described the architecture of the swin transformer:
 
 For input:
 
-- It first splits an input RGB image into non-overlapping patches by a patch splitting module, like ViT. Each patch is treated as a “token” and its feature is set as a concatenation of the raw pixel RGB values. The paper uses $4\times4$ patches;
-- A linear embedding projects the each patch ($1\times48$) to a $1\times C$ feature vector. C could be 96, 128 and 192, depends on network size.
+- It first splits an input RGB image into non-overlapping patches by a patch splitting module, like ViT. Each patch is treated as a “token” and its feature is set as a concatenation of the raw pixel RGB values. The paper uses $$4\times4$$ patches;
+- A linear embedding projects the each patch ($$1\times48$$) to a $$1\times C$$ feature vector. C could be 96, 128 and 192, depends on network size.
 
 Swin Transformer is built by replacing the standard multi-head self attention (MSA) module in a Transformer block by a module based on shifted windows. A Swin Transformer block consists of a shifted window based MSA module, followed by a 2-layer MLP with GELU non- linearity in between. A LayerNorm (LN) layer is applied before each MSA module and each MLP, and a residual connection is applied after each module.
 
 ## Self Attention in Non-overlapped Windows
 
-One of the major contributions of swin transformer is that it proposes to perform self attention in a local window instead of globally (each red box as shown below). The windows are arranged to evenly partition the image in a non-overlapping manner and each window contains $M\times M$ patches (M=7 in the paper).
+One of the major contributions of swin transformer is that it proposes to perform self attention in a local window instead of globally (each red box as shown below). The windows are arranged to evenly partition the image in a non-overlapping manner and each window contains $$M\times M$$ patches (M=7 in the paper).
 
 ![Screen Shot 2021-04-11 at 5.31.42 PM](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_04_11_17_31_44_Screen%20Shot%202021-04-11%20at%205.31.42%20PM.png)
 
-To produce a hierarchical representation, the number of tokens is reduced by patch merging layers as the network gets deeper. The first patch merging layer concatenates the features of each group of $2\times2$ neighboring patches, and applies a linear layer on the 4C-dimensional concatenated features. This reduces the number of tokens by a multiple of $2\times2=4$ (2× downsampling of resolution), and the output dimension is set to 2C.
+To produce a hierarchical representation, the number of tokens is reduced by patch merging layers as the network gets deeper. The first patch merging layer concatenates the features of each group of $$2\times2$$ neighboring patches, and applies a linear layer on the 4C-dimensional concatenated features. This reduces the number of tokens by a multiple of $$2\times2=4$$ (2× downsampling of resolution), and the output dimension is set to 2C.
 
 ## Shifted Windows
 
@@ -42,7 +42,7 @@ Table below compares the performance of with and without shifted window, which o
 
 ## Relative Position Bias
 
-A relative position bias $B\in\mathbb{R}^{M^2\times M^2}$ is included to each head in computing the similarility for self attention:
+A relative position bias $$B\in\mathbb{R}^{M^2\times M^2}$$ is included to each head in computing the similarility for self attention:
 
 $$Attention(Q,K,V)=SoftMax(\frac{QK^T}{\sqrt(d)+B})$$
 
