@@ -20,10 +20,10 @@ The data of the history and altas is provided as javascript file in [src/twha/js
    2. 图标 路径是twha/sym/图标.png
    3. 日语区域名
    4. 英文区域名
-   5. 中文区域名，@/$表示中文和英文是一样的
+   5. 中文区域名，@/$表示中文和日语是一样的
    6. 日语区域缩写
    7. 英文区域缩写
-   8. 中文区域缩写，@/$表示中文和英文是一样的
+   8. 中文区域缩写，@/$表示中文和日语是一样的
    9. x坐标
    10. y坐标
    11. display level
@@ -31,7 +31,7 @@ The data of the history and altas is provided as javascript file in [src/twha/js
 
    0. 日语称呼
    1. 英语称呼
-   2. 中文称呼，@/$表示中文和英文是一样的
+   2. 中文称呼，@/$表示中文和日语是一样的
 5. 统治者：接下来如果长度大于3
 
    0. year start
@@ -39,4 +39,4 @@ The data of the history and altas is provided as javascript file in [src/twha/js
    2. 图标
    3. 日语区域名
    4. 英文区域名
-   5. 中文区域名，@/$表示中文和英文是一样的
+   5. 中文区域名，@/$表示中文和日语是一样的
