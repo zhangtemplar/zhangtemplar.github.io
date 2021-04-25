@@ -6,7 +6,7 @@ tags: world history timeline altas map
 
 Note this website is based on work from [The World History and Atlas](http://x768.com/w/twha.ja). There is a version with 3D map in [历史时间线](http://gonnavis.com/timeline/twha/).
 
-<iframe src="http://timeline.zhqiang.org/"  height="600" width="600"></iframe>
+<iframe src="https://timeline.zhqiang.org/"  height="600" width="600"></iframe>
 
 The data of the history and altas is provided as javascript file in [src/twha/js/region.js](https://github.com/gonnavis/Timeline/blob/master/src/twha/js/regions.js). It is an array, where each element has the following format:
 
