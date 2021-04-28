@@ -1,0 +1,23 @@
+---
+layout: post
+title: Operating Expense vs Capital Expense
+tags: finance operating-expense opex capital-expense capex
+---
+An operating [expense](https://www.investopedia.com/terms/e/expense.asp) (OPEX) is an expense required for the day-to-day functioning of a business. In contrast, a [capital expense](https://www.investopedia.com/terms/c/capitalexpenditure.asp) (CAPEX) is an expense a business incurs to create a benefit in the future. Operating expenses and capital expenses are treated quite differently for accounting and tax purposes. This note is based on my reading of [The Difference Between an Operating Expense vs. a Capital Expense](https://www.investopedia.com/ask/answers/042415/what-difference-between-operating-expense-and-capital-expense.asp#:~:text=What%20Is%20An%20Operating%20Expense,a%20benefit%20in%20the%20future.)
+
+The table below compares two types of expenses. Note, in running its business, a company sometimes has a choice of whether to incur an operating expense or a capital expense. For example, if a company needs more storage space for housing its data, it can either invest in new data storage devices as a capital expense or lease space in a data center as an operational expense.
+
+| Item          | [Operating Expense](https://www.investopedia.com/terms/o/operating_expense.asp) | [Captial Expense](https://www.investopedia.com/terms/c/capitalexpenditure.asp) |
+| ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| purpose       | required for the day-to-day functioning of a business        | to create a benefit in the future (expected to be longer than one year) |
+| examples      | rent, equipment, inventory costs, marketing, payroll, insurance, step costs, and funds allocated for research and development, taxes | buy a new asset or add value of an existing asset, the purchase of fixed assets, such as new buildings or business equipment, upgrades to existing facilities, and the acquisition of intangible assets, such as patents |
+| equipment     | when leased                                                  | when purchased                                               |
+| fixed assets  | General repairs and maintenance of existing fixed assets such as buildings and equipment are also considered operating expenses unless the improvements will increase the useful life of the asset. | when purchased                                               |
+| duration      | usually accounted in one year                                | the asset must have a useful life of longer than one year    |
+| tax           | allows to deduct operating expenses if the business operates to earn profits | not directly tax deductible. it must capitalize the expense or write it off over its useful life. The IRS has guidelines related to how businesses must capitalize assets, and there are different classes for different types of assets. |
+| where to find | income statement as an expenditure                           | balance sheet as an investment                               |
+| how to read   | reduce operating expenses without significantly affecting a firm's ability to compete with its competitors. | [cash-flow-to-capital-expenditures](https://www.investopedia.com/terms/c/cashflow_capex.asp) (CF-to-CapEx) ratio. It is important to note that this is an industry-specific ratio and should only be compared to a ratio derived from another company that has similar CapEx requirements. |
+
+Capital expenses are recorded as assets on a company's [balance sheet](https://www.investopedia.com/terms/b/balancesheet.asp) rather than as expenses on the income statement. The [asset](https://www.investopedia.com/ask/answers/122214/how-should-company-budget-capital-expenditures.asp) is then [depreciated](https://www.investopedia.com/terms/d/depreciation.asp) over the total life of the asset, with a period depreciation expense charged to the company's income statement, normally monthly. Accumulated depreciation is recorded on the company's balance sheet as the summation of all depreciation expenses, and it reduces the value of the asset over the life of that asset.
+
+A non-operating expense is an expense incurred by a business that is unrelated to the business' core operations. The most common types of non-operating expenses are interest charges or other costs of borrowing and losses on the disposal of assets. Accountants sometimes remove non-operating expenses to examine the performance of the business, ignoring effects of financing and other irrelevant issues.
