@@ -33,8 +33,8 @@ where
 - K*=Strike price*
 - r*=Risk-free anual interest rate*
 - t*=Years to maturity*
-- $\mathcal{N}$*=cumulative density function of normal distribution*
-- $\sigma$*=annaul volalicity of the stock which is relative change of price within one year*
+- $$\mathcal{N}$$ *=cumulative density function of normal distribution*
+- $$\sigma$$ *=annaul volalicity of the stock which is relative change of price within one year*
 
 > the Black Scholes model is only used to price European options and does not take into account that U.S. options could be exercised before the expiration date
 
