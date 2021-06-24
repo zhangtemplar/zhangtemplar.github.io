@@ -11,7 +11,7 @@ The major contribution of this paper is that it addresses the speed limitation o
 
 # Representation
 
-We express the continuous shapes of a scene as the zero level set $$S_0=\{x|S(x)=0\}$$ of a signed distance function (SDF) $$S(x;\theta):\mathbb{R}^3\to\mathbb{R} $$ where $$x\in\mathbb{R}^3$$ is a location in 3D space and $$\theta$$ are the learnable parameters of our SIREN-based SDF representation.
+We express the continuous shapes of a scene as the zero level set $$S_0=\{x\vert S(x)=0\}$$ of a signed distance function (SDF) $$S(x;\theta):\mathbb{R}^3\to\mathbb{R} $$ where $$x\in\mathbb{R}^3$$ is a location in 3D space and $$\theta$$ are the learnable parameters of our SIREN-based SDF representation.
 
 > RIREN is a MLP network is uses sin function as the activation function instead of ReLU or others.
 
