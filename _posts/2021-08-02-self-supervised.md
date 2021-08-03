@@ -3,8 +3,6 @@ layout: post
 title: Self Supervised Learning Reading Note
 tags: deep-learning cvpr 2021 tutorial self-supervise teacher-student contrastive-learning simpleclr BowNet OBoW DION SimSiam BYOL
 ---
-# Self Supervised Learning
-
 This is my reading note on CVPR 2021 tutorial on self supervised learning: [Leave Those Nets Alone:
 Advances in Self-Supervised Learning](https://gidariss.github.io/self-supervised-learning-cvpr2021/) and [Data- and Label-Efficient Learning in An Imperfect World](https://vita-group.github.io/cvpr_2021_data_efficient_tutorial.html).
 
