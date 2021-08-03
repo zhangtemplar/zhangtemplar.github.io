@@ -84,4 +84,34 @@ This is my reading note on [CVPR 2021 Tutorial: Data- and Label-Efficient Learni
 
 - Teacher-Student-based: exploit the teacher-student paradigm for transferring knowledge on target data
 
-# 
+# Results
+
+Those methods have been evaluated on two tasks: image classification on office-31 dataset and digiti recognition (similar to image classification) on digitis dataset. There are methods outperforms fully supervised baseline on each of the dataset, however, there is no approach which works well on both datasets.
+
+## Office-31
+
+![image-20210802212848232](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_08_02_21_28_48_image-20210802212848232.png)
+
+The supervised learning based method (full) reaches accuracy of 91.7%. The table shows that, some unsupervised domain adaption methods could output fully supervised learning methods, e.g.,
+
+- Reliable Weighted Optimal Transport (RWOT): optimal transport method 
+- Conditional domain adversarial network (CDAN): adversial based method (without fake data generation)
+
+![image-20210802212736047](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_08_02_21_27_36_image-20210802212736047.png)
+
+![image-20210802212723845](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_08_02_21_27_23_image-20210802212723845.png)
+
+![image-20210802212557052](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_08_02_21_25_57_image-20210802212557052.png)
+
+## Digits
+
+Use supervised learning method on target domain, the performance is 96.5% on USPS, 96.7% on SVNH and 99.2% on MNIST. Some unsupervised domain adaption methods could output fully supervised learning methods on some domains, e.g., 
+
+- Symmetric Bi-Directional Adaptive GAN (sbada-gan): outperforms the basline on MNIST-USPS and MINST-MNIST-M, but significantly lower on others;
+- Unsupervised Domain Adaptation using Feature-Whitening and Consensus Loss (DWT): outperforms the basline on MNIST-USPS but slightly lower on others.
+
+![image-20210802212709927](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_08_02_21_27_10_image-20210802212709927.png)
+
+![image-20210802212530473](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_08_02_21_25_30_image-20210802212530473.png)
+
+
