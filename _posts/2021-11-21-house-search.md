@@ -8,7 +8,7 @@ This post is my review of house search from Sep to Oct of 2021. I have checked 8
 
 This figure visualized the houses I have checked:
 
-<iframe src="https://goo.gl/maps/5jLd2tuQTmYhe336A"></iframe>
+![Screen Shot 2021-11-21 at 7.43.18 PM](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2021_11_21_20_30_37_Screen%20Shot%202021-11-21%20at%207.43.18%20PM.png)
 
 I started my search assuming the market will cool down after Aug, which turns out to me untrue. The price keeps increasing and even at faster pace. If I set my criterion more feasible, I should have bought the house earlier and at a lower price (<=2.0M).
 
