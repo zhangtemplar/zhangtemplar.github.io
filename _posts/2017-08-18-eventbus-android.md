@@ -1,6 +1,6 @@
 ---
 layout: post
-title: EventBus in Android: lessons learned
+title: EventBus in Android lessons learned
 ---
 
 Event bus can be very helpful when you need to pass events cross multiple objects back and forth. In such cases, the listeners may get messy. 
