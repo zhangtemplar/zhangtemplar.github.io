@@ -26,9 +26,9 @@ We thus aim to first find a perceptually equivalent, but compu- tationally more 
 
 We train an autoencoder which provides a lower-dimensional (and thereby efficient) representational space which is perceptu- ally equivalent to the data space. A notable advantage of this approach is that we need to train the universal autoencoding stage only once and can therefore reuse it for multiple DM trainings or to explore possibly completely different tasks.
 
-LDM could be illustrated as below. It utilizes encoder $\mathcal{E}$ to project the input image $x\in\mathbb{R}^{H\times W\times 3}$ into a latent space $z\in\mathbb{R}^{h\times w\times c}$. Then z goes through a duffision process and then a denoising process to recover z. The denoising process is a sequence of U-Net, which will be detailed in next section. The latent space is then recovered into image via decoder $\mathcal{D}$.
+LDM could be illustrated as below. It utilizes encoder $$\mathcal{E}$$ to project the input image $$x\in\mathbb{R}^{H\times W\times 3}$$ into a latent space $$z\in\mathbb{R}^{h\times w\times c}$$. Then z goes through a duffision process and then a denoising process to recover z. The denoising process is a sequence of U-Net, which will be detailed in next section. The latent space is then recovered into image via decoder $$\mathcal{D}$$.
 
-$f=\frac{H}{h}=\frac{W}{w}$ is the downsamping factor and the paper considers $f=\{1, 2, 4, 8, 16, 32\}$, where f=1 degrades to vanilla DM.
+$$f=\frac{H}{h}=\frac{W}{w}$$ is the downsamping factor and the paper considers $$f=\{1, 2, 4, 8, 16, 32\}$$, where f=1 degrades to vanilla DM.
 
 ![image-20220923080947516](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/2022_09_23_08_09_47_image-20220923080947516.png)
 
@@ -41,9 +41,9 @@ In order to avoid arbitrarily high-variance latent spaces, we experiment with tw
 
 # Conditioning Mechanisms
 
-LDM also supports other modality input y to condition the denoising process.  This can be implemented with a conditional denoising autoencoder $\theta(z_t, t, y)$ and paves the way to controlling the synthesis process through inputs y such as text [68], semantic maps [33, 61] or other image-to-image translation tasks [34].
+LDM also supports other modality input y to condition the denoising process.  This can be implemented with a conditional denoising autoencoder $$\theta(z_t, t, y)$$ and paves the way to controlling the synthesis process through inputs y such as text [68], semantic maps [33, 61] or other image-to-image translation tasks [34].
 
-We turn DMs into more flexible conditional image generators by augmenting their underlying UNet backbone with the cross-attention mechanism [97], which is effective for learning attention-based models of various input modalities [35,36]. To pre-process y from various modalities (such as language prompts) we introduce a domain specific en- coder τθ that projects y to an intermediate representation $\tau_\theta(y)\in\mathcal{R}^{M\times d_\tau}$, which is then mapped to the intermediatel ayers of the UNet via a cross-attention layer implementing $\mbox{Attention}(Q,K, V) = \mbox{softmax}(\frac{QK^T}{\sqrt{d}}\cdot V)$. Here $\tau_\theta$ is the encoder for the conditioning input.
+We turn DMs into more flexible conditional image generators by augmenting their underlying UNet backbone with the cross-attention mechanism [97], which is effective for learning attention-based models of various input modalities [35,36]. To pre-process y from various modalities (such as language prompts) we introduce a domain specific en- coder τθ that projects y to an intermediate representation $$\tau_\theta(y)\in\mathcal{R}^{M\times d_\tau}$$, which is then mapped to the intermediatel ayers of the UNet via a cross-attention layer implementing $$\mbox{Attention}(Q,K, V) = \mbox{softmax}(\frac{QK^T}{\sqrt{d}}\cdot V)$$. Here $$\tau_\theta$$ is the encoder for the conditioning input.
 
 # Experiments
 
