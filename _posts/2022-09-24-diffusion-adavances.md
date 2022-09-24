@@ -1,6 +1,6 @@
 ---
 layout: post
-title: unCLIP-Hierarchical Text-Conditional Image Generation with CLIP Latents
+title: Recent Adavances of Diffusion Models
 tags: deep-learning diffusion CLIP unCLIP GLIDE text-image image-synthesize video-diffusion wavegrad audio-synthesize distillation autoregressive
 ---
 
