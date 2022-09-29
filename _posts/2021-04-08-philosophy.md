@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 思想史读书笔记
-tags: philosophy note history
+tags: philosophy note history misc
 ---
 
 As for my note on reading book [Ideas: A History from Fire to Freud](https://www.amazon.com/dp/B000FCKC5G/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1) or known as [思想史: 从火到弗洛伊德](https://book.douban.com/subject/27136549/), I would like to cite [西方哲学史思维导图+脉络图（完整版）](https://zhuanlan.zhihu.com/p/75348403)
