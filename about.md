@@ -6,9 +6,9 @@ permalink: /about/
 
 # Summary
 
-  - Experience of building an engineer team from scratch to about 10 engineer;
-  - Software developer with management experience and solid programming skills;
-  - Experienced researcher in computer vision, machine learning and deep learning.
+  - Starting as an IC and growing into a manager role, I built and led a team of eight CVML engineers. 
+  - We shipped a face tracking solution on Quest Pro, the first wearable consumer device to enable users’ digital avatars to match their real-world facial expressions through on-device sensors in real time.
+  - A full-stack CVML engineer with product experience in hardware design, data collection, model development, and evaluations, I bring a diverse set of skills to the table.
 
 # Contact Information
 
@@ -40,8 +40,15 @@ permalink: /about/
 
 # Experience
 
-  - Manager, Facebook, 2019~now
-    - Lead a team to develop face tracking technology to drive AR/VR products, Facebook App, IG and Messengers.
+  - Tech Lead Manager, Facebook, 2019~now
+    - started at IC level and worked my way up to a manager position, I built and led a team of eight CVML engineers. Together, we shipped various face tracking solutions for multiple AR/VR products;
+    - shipped face tracking solution for Quest Pro, which was the first consumer wearable device to enable digital avatars to match people’s real-world facial expressions through on-device sensors in real time.
+      - build simulation tool set to design face tracking hardware ahead of real data;
+      - build scalable infrastructure to collect and serve 1.5 Billion frames from 19k subjects over 6k hours of data for machine learning;
+      - apply self-supervised learning and differential rendering to generate pseudo ground truth without expansive direct human annotation;
+      - innovate model (domain adaption, teacher-student distillation() to leverage synthetic data and weak human labels to improve quality over pseudo GT;
+      - develop effective face tracking metrics and scalable evaluation framework robust to noise GT and consistent with human experiential KPI
+    - a full-stack CVML engineer with a well-rounded understanding of the entire product develop- ment process: hardware design, data collection, model development, and evaluations.
 
   - Founder & CTO, Button, 2018~2019.
   
@@ -118,6 +125,7 @@ permalink: /about/
 
 # Patents
 
+  - US11586283B1, Artificial reality device headset DONN and DOFF detection, ”Meta”, ”Dong Yang, Qiang Zhang, Wen Song, Theresa Loney Casarez”,
   - US-2016379352-A1,Label-free non-reference image quality assessment via deep neural network ,"Samsung Electronics Co., Ltd.","Qiang Zhang, Zhengping Ji, Lilong SHI, Ilia Ovsiannikov",
   - US-2013129188-A1,Electronic devices for defect detection ,"Sharp Laboratories Of America, Inc.","Qiang Zhang, Xinyu Xu, Chang Yuan, Hae-Jong Seo, Petrus J.L. van Beek",
   - US-2014264034-A1,Near-field optical sensing system ,"Qualcomm Mems Technologies, Inc.","Xiquan Cui, Muhammed I. Sezan, Russell Wayne Gruhlke, Qiang Zhang",
