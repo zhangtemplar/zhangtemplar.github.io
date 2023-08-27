@@ -13,30 +13,7 @@ This is my configuration of obsidian-zotero-integration:
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/obsidian2.png)
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/obsidian3.png)
 # Template
-Please change `https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/` to your own link.
-```
----
-layout: post
-title: {{title}}
-tags: {% if tags.length > 0 -%}{% for t in tags %} {{t.tag | lower | replace(" ", "-")}}{%- endfor %}{% endif %}
----
-
-> {{abstractNote}}
-
-# Notes
-{% persist "annotations" %}
-{% set annotations = annotations | filterby("date", "dateafter", lastImportDate) -%}
-{% if annotations.length > 0 %}
-
-{%- for annotation in annotations %}
-{% if annotation.color !== "#ffd400" %}
->[!quote{% if annotation.color %}|{{annotation.color}}{% endif %}] {{calloutHeader(annotation.color)}}
->{%- endif -%}{% if annotation.imageRelativePath %}
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/{{annotation.imageRelativePath}}) {% endif %}{% if annotation.annotatedText %}
-{{annotation.annotatedText}} [(p. {{annotation.pageLabel}})](zotero://open-pdf/library/items/{{annotation.attachment.itemKey}}?page={{annotation.pageLabel}}&annotation={{annotation.id}}){%- endif %}{%- if annotation.comment%}
-%%{{annotation.comment}}%%{%- endif %}{%- endfor %}{% endif %} {% endpersist %}
-```
-
+Please refer to [my template](https://drive.google.com/file/d/1oDaM7O4qylNrpGZynb6CMDmZk-XSXwmI/view?usp=sharing) but make sure to change `https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/` to your own link.
 # How to Use
 1. open command palette to select `Zotero Intergation: import #1`;
 2. in the prompt, put your cite key of paper you want to import from Zotero;
