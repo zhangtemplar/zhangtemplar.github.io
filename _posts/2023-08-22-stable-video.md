@@ -8,14 +8,14 @@ This is my reading note on [StableVideo: Text-driven Consistency-aware Diffusion
 
 # Introduction
 In this paper, we tackle this problem by introducing temporal dependency to exist- ing text-driven diffusion models, which allows them to generate consistent appearance for the edited objects. Specifically, we develop a novel inter-frame propagation mechanism for diffusion video editing, which leverages the concept of layered representations to propagate the appearance information from one frame to the next. We then build up a text-driven video editing framework based on this mecha- nism, namely StableVideo, which can achieve consistency- aware video editing [(p. 1)](zotero://open-pdf/library/items/2DGI5GXC?page=1&annotation=AFFQGBMK)
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_1_.png) 
+![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_1.png) 
 
 # Related Work
 1. **Dreamix** [27] proposes a solution to generate consistent video according to input image/video and prompts. However, it focuses more on generating smooth motions, e.g., pose and camera movements, rather than maintaining geometric consistency of the objects across time [(p. 1)](zotero://open-pdf/library/items/2DGI5GXC?page=1&annotation=WY98DW3C)
 2. **Neural layered atlas (NLA)** [24, 23] tries to tackle the temporal continuity problem by decomposing the video into a set of atlas layers, each of which describes one target object to be edited [(p. 1)](zotero://open-pdf/library/items/2DGI5GXC?page=1&annotation=U49R88RS)
 3. **Text2LIVE** [1] provides a text-driven appearance manipulation solution of adding additional edit layers on atlases, in which a specific generator for the edit layers is trained. Although it achieves good results with strict structure preserved, it is not able to apply thorough editing. M [(p. 2)](zotero://open-pdf/library/items/2DGI5GXC?page=2&annotation=Q993M889)
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_8_.png) 
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_9_.png) 
+![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_8.png) 
+![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_9.png) 
 
 ## Temporal Propagation in Video Editing
 Some methods rely on key frames [19, 44, 50] or optical flow [37] to propagate contents between frames. [(p. 2)](zotero://open-pdf/library/items/2DGI5GXC?page=2&annotation=PKR7NMY6) Atlas [1, 20] tackles this problem by decomposing the video into unified 2D atlas layers for each target. This approach allows contents to be applied to the global summarized 2D atlases and mapped back to the video, achieving temporal consistency with minimal effort.  Inspired by the concept of atlas approach, we employ the pre-trained neural layered atlas model to solve the inconsistency problem in diffusion video editing, thereby achieving high-quality editing results with temporal coherence [(p. 3)](zotero://open-pdf/library/items/2DGI5GXC?page=3&annotation=5ZJ5DS75)
@@ -56,10 +56,10 @@ Firstly, the geometries and pixels from different viewpoints provide more detail
 Our goal is to guarantee that the aggregated atlas is highly aligned with the original one, in terms of locations, so that appearance edit will not affect the geometric consistency and the temporal continuity. Reconstruction loss, $L_{rec}$, between the edited and reconstructed key frames is employed in the training process as [(p. 5)](zotero://open-pdf/library/items/2DGI5GXC?page=5&annotation=J3S5ZF8G)
 # Ablation Study
 To verify the necessity of the key frame editing, we apply editing in atlas layer directly for the foreground as a simple baseline. The atlas might not be so deformed for human perception, but it significantly affects the diffusion models.
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_10_.png) 
+![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_10.png) 
 
 We also conduct extensive ablation study on inter-frame propagation module. The objective of this module is to maintain the geometry of the foreground when editing key frames. Firstly, we consider four different settings for editing key frames as shown in Fig. 11.
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_12_.png) 
+![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_11.png) 
 
 1. Random generation. Each key frame only shares the sametext prompt with the others. In this case, there are significant differences among the generated key frames.
 2. Fix initial latent. Unlike starting from random noise every time we edit, we start generating each key frame from the same latent noise and share the text prompt. In this case, there is higher similarity in the content generated for each frame, but the consistency is still not satisfactory.
@@ -67,4 +67,4 @@ We also conduct extensive ablation study on inter-frame propagation module. The 
 4. Inter-frame propagation (ours). Our final approach is to employ partial atlas to geometrically align the appearances between two frames, followed by a process of adding noise and then apply denoising process.
 # Limitations and Future Works
 Firstly, our method is constrained by NLA. Learning atlas layers may fail for non-rigid objects with significant structural deformation as shown in Fig. 13. While we can mitigate this by dividing long videos into short clips where the objects can be considered to be rigid, it is still not feasible to address every single case. Secondly, our method is constrained by the capabilities of the diffusion models, which may struggle with specific scenarios such as human or animals. Besides, it may be better to optimize the diffusion model with the objective of aligning the generated contents to the reconstructed ones.
-![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_13_.png) 
+![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/chaiStableVideoTextdrivenConsistencyaware2023_13.png) 
