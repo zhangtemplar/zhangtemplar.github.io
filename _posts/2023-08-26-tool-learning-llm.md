@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tool Learning with Foundation Models
-tags:  read llm review reinforcement
+tags:  deep-learning llm review reinforcement
 ---
 
 This is my read note on [Tool Learning with Foundation Models](http://arxiv.org/abs/2304.08354)
