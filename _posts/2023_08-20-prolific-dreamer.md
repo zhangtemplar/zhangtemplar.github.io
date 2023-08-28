@@ -15,7 +15,7 @@ DreamFusion introduces the Score Distillation Sampling (SDS) algorithm to optimi
 
 Score distillation sampling (SDS) is an optimization method by distilling pretrained diffusion models, also known as Score Jacobian Chaining (SJC) [54]. It is widely used in text-to-3D generation [33, 54, 20, 28, 54, 4] with great promise. SDS optimizes the parameter $\theta$ by solving
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/wangProlificDreamerHighFidelityDiverse2023-4-x171-y453.png) 
-Its gradient is approximated by:
+Here c is camera parameter and y the text prompt given as condition. Its gradient is approximated by:
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/wangProlificDreamerHighFidelityDiverse2023-4-x182-y414.png) 
 
 # Variational Score Distillation
@@ -24,16 +24,14 @@ We first present Variational Score Distillation (VSD), which treats the correspo
 The VSD could be described as:
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/wangProlificDreamerHighFidelityDiverse2023-5-x102-y583.png) 
 
-To obtain 3D representations of high visual quality, we propose to optimize the distribution µ to align its samples with the pretrained diffusion model by solving:
+To obtain 3D representations of high visual quality, we propose to optimize the distribution $\mu$ to align its samples with the pretrained diffusion model by solving:
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/wangProlificDreamerHighFidelityDiverse2023-5-x236-y485.png) 
 
-This is a typical variational inference problem that uses the variational distribution qµ 0 (x0|y) to approximate (distill) the target distribution p0(x0|y) [(p. 5)](zotero://open-pdf/library/items/UZXBCJEB?page=5&annotation=KA352BTG)
-
-We simultaneously solve an ensemble of these problems (termed as variational score distillation or VSD) as follows:
+This is a typical variational inference problem that uses the variational distribution $q_0^\mu(x_0|y)$ to approximate (distill) the target distribution $p_0(x_0|y)$ [(p. 5)](zotero://open-pdf/library/items/UZXBCJEB?page=5&annotation=KA352BTG). We simultaneously solve an ensemble of these problems (termed as variational score distillation or VSD) as follows:
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/wangProlificDreamerHighFidelityDiverse2023-5-x171-y340.png) 
 
 Here $$q_t^\mu(x_t|y):=\int q_0^\mu(x_0|y)p_{t_0}(x_t|x_0)d_{x_0}$$
-To solve problem (5), a direct way can be to train another parameterized generative model for $\mu$, but it may bring much computation cost and optimization complexity. Inspired by previous particle-based variational inference [23, 3, 9] methods, we maintain n 3D parameters4 $\theta_{i=1}^n$ as particles and derive a novel update rule for them. Intuitively, we use $\theta_{i=1}^n$ to “represent” the current distribution $\mu$, and $\theta(i)$( will be samples from the optimal distribution $\mu^*$ if the optimization converges [(p. 5)](zotero://open-pdf/library/items/UZXBCJEB?page=5&annotation=YDU2H3VQ)
+To solve problem (5), a direct way can be to train another parameterized generative model for $\mu$, but it may bring much computation cost and optimization complexity. Inspired by previous particle-based variational inference [23, 3, 9] methods, we maintain n 3D parameters $\theta_{i=1}^n$ as particles and derive a novel update rule for them. Intuitively, we use $\theta_{i=1}^n$ to “represent” the current distribution $\mu$, and $\theta(i)$( will be samples from the optimal distribution $\mu^*$ if the optimization converges [(p. 5)](zotero://open-pdf/library/items/UZXBCJEB?page=5&annotation=YDU2H3VQ)
 
 
 ![](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/wangProlificDreamerHighFidelityDiverse2023-6-x149-y325.png) 
