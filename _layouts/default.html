@@ -60,7 +60,7 @@
 
     <div class="wrapper-footer">
       <div class="container">
-{% raw %}{% capture tags %}
+{% capture tags %}
   {% for tag in site.tags %}
     {{ tag[1].size | plus: -10000 }}###{{ tag[0] | replace: ' ', '##' }}###{{ tag[1].size }}
   {% endfor %}
@@ -78,7 +78,7 @@
     <span class="tag-size-{{ size }}">
         <a class="tag-link" href="/tag/{{ tag | slugify }}" rel="tag">{{ tag }}</a> ({{ count }})
     </span>
-{% endfor %}{% endraw %}
+{% endfor %}
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
