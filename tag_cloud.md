@@ -4,6 +4,7 @@ title: "Archives"
 permalink: "/tag_cloud/"
 ---
 
+<div>
 {% raw %}{% capture tags %}
   {% for tag in site.tags %}
     {{ tag[1].size | plus: -10000 }}###{{ tag[0] | replace: ' ', '##' }}###{{ tag[1].size }}
@@ -23,5 +24,5 @@ permalink: "/tag_cloud/"
         <a class="tag-link" href="/tag/{{ tag | slugify }}" rel="tag">{{ tag }}</a> ({{ count }})
     </span>
 {% endfor %}{% endraw %}
-
+</div>
 <a href="/system_design">System Design</a>
