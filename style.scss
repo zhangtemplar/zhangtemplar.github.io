@@ -295,6 +295,25 @@ th{
 td{
     border:1px solid #000000;
 }
+.tag-size-5 {
+    font-size: 1.25rem;
+}
+
+.tag-size-4 {
+    font-size: 1.10rem;
+}
+
+.tag-size-3 {
+    font-size: 0.95rem;
+}
+
+.tag-size-2 {
+    font-size: 0.80rem;
+}
+
+.tag-size-1 {
+    font-size: 0.65rem;
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
