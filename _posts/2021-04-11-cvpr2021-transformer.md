@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CVPR 2021 Transformer Paper
-tags: deep-learning transformer tracker image-retrival motion matching
+tags:  image-retrival motion transformer tracker deep-learning matching
 ---
 This post summarizes the papers on transformers in CVPR 2021. This is from [CVPR2021-Papers-with-Code](https://github.com/amusi/CVPR2021-Papers-with-Code). Given transforms captures the interaction between query (Q) and dictionary (K), transform begins to see applications in tracking (e.g., Transformer Tracking, Transformer Meets Tracker: Exploiting Temporal Context for Robust Visual Tracking), local match matching  (e.g., LoFTR Detector-Free Local Feature Matching with Transformers) and image retrieval (e.g., Thinking Fast and Slow: Efficient Text-to-Visual Retrieval with Transformers, Revamping cross-modal recipe retrieval with hierarchical Transformers and self-supervised learning)
 

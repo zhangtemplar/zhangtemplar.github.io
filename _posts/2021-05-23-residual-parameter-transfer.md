@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Residual Parameter Transfer for Deep Domain Adaptation
-tags: deep-learning domain-adaption office minist lenet resnet-50 group-lasso rank
+tags:  minist office lenet deep-learning domain-adaption group-lasso rank resnet-50
 ---
 This is my reading note for [Residual Parameter Transfer for Deep Domain Adaptation](https://arxiv.org/abs/1711.07714), which is for domain adaption. Different from existing methods, which mostly aims to learn a network to adpat the (feature) of target domain to the source domain, this paper learns a transform on the parameters of network trained on source domain to the network for the target domain.
 

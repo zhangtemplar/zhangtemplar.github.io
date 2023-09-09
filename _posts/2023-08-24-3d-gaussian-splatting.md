@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D Gaussian Splatting for Real-Time Radiance Field Rendering
-tags:  nerf deep-learning 3d-gaussian face tracking dynamic
+tags:  dynamic deep-learning face 3d-gaussian tracking nerf
 ---
 This is my reading note on [3D Gaussian Splatting for Real-Time Radiance Field Rendering](https://dl.acm.org/doi/10.1145/3592433)(best paper of SIGGRAPH 2023) and its extension [Dynamic 3D Gaussians: Tracking by Persistent Dynamic View Synthesis](http://arxiv.org/abs/2308.09713), which enables it to track dynamic objects/scenes.
 

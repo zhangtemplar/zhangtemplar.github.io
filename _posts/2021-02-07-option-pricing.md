@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Option Pricing Model
-tags: finance option pricing binomial black scholes
+tags:  binomial scholes finance option black pricing
 ---
 The price of option depends on many factors, current stock price, strike price, [implied volatility](https://www.investopedia.com/terms/i/iv.asp) and expiration date. According to [Investopedia](https://www.investopedia.com/terms/o/optionpricingtheory.asp), the most common pricing model is [Black Scholes Model](https://www.investopedia.com/terms/b/blackscholes.asp). Howerver, it does not take into account the execution of [American Style](https://www.investopedia.com/terms/a/americanoption.asp) options, which can be exercised at any time before, and including the day of, expiration, for which [Binomial Option Pricing Model](https://www.investopedia.com/terms/b/binomialoptionpricing.asp) should be used.
 

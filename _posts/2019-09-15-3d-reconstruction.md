@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D Reconstruction
-tags: deep-learning 3d-reconstruction depth 3d-r2n2 pixel2mesh mesh-rcnn
+tags:  3d-reconstruction mesh-rcnn pixel2mesh deep-learning depth 3d-r2n2
 ---
 
 # [Depth Map Prediction from a Single Image using a Multi-Scale Deep Network](https://papers.nips.cc/paper/5539-depth-map-prediction-from-a-single-image-using-a-multi-scale-deep-network.pdf)

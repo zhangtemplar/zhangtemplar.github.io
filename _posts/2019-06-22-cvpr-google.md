@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CVPR 2019 Paper from Google
-tags: cvpr 2019 google
+tags:  google cvpr 2019
 ---
 
 Oral

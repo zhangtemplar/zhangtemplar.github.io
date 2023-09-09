@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neural Lumigraph Rendering
-tags: deep-learning cvpr 2021 best-paper synthetic differetial-render nerf 3d-mesh RIREN lumigraph
+tags:  2021 lumigraph deep-learning synthetic 3d-mesh riren cvpr best-paper nerf differetial-render
 ---
 [Neural Lumigraph Rendering](https://arxiv.org/abs/2103.11571) was accepted for CVPR 2021 Oral and best paper candidate. This paper proposes a method which performs on par with NeRF on view interpolation tasks while providing a high-quality 3D surface that can be directly exported for real-time rendering at test time. [code](http://www.computationalimaging.org/publications/nlr/) is publically available.
 

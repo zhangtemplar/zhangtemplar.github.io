@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Teach LLMs to Personalize -An Approach inspired by Writing Education
-tags:  deep-learning llm personalize bad
+tags:  personalize bad deep-learning llm
 ---
 
 This is my reading note on [Teach LLMs to Personalize -An Approach inspired by Writing Education](http://arxiv.org/abs/2308.07968). The paper proposes a method to generate personalized answer given a question. The method is based on finds relevant sentences from user's previous documents given the question.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation
-tags:  diffusion deep-learning image2image personalize dreambooth dalle-2 imagen
+tags:  personalize diffusion dreambooth deep-learning dalle-2 imagen image2image
 ---
 
 This is my reading note on [DreamBooth](https://dreambooth.github.io/). Given as input just a few images of a subject, we fine-tune a pretrained text-to-image model (Imagen, although our method is not limited to a specific model) such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can then be used to synthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images.

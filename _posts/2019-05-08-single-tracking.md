@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Single Object Tracking
-tags: deep-learning graph tracking single reinforcement-learning
+tags:  graph deep-learning tracking reinforcement-learning single
 ---
 
 ![](https://s3-us-west-2.amazonaws.com/static.pyimagesearch.com/object-tracking-dlib/object_tracking_dlib_example01.gif)

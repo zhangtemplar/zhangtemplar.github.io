@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object Detections
-tags: deep-learning object-detection r-cnn fast-rcnn faster-rcnn mask-rcnn yolo ssd r-fcn retina-net focal-loss fcos centernet cornernet hourglass
+tags:  mask-rcnn yolo r-cnn deep-learning faster-rcnn ssd object-detection cornernet hourglass retina-net fcos r-fcn focal-loss fast-rcnn centernet
 ---
 
 Here is the comparison of the most popular object detection frameworks.

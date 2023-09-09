@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Domain Adaption Paper Reading List
-tags: deep-learning domain-adaption FixBi ProDA SPL Contrastive-Adaptation-Network Mean-teacher DFA-MCD SHOT SRDA RAN TA3N DRANet DSN DANN PCIDA KD3A MEDA
+tags:  meda mean-teacher deep-learning dann dranet pcida ran dfa-mcd domain-adaption proda shot ta3n fixbi srda kd3a contrastive-adaptation-network spl dsn
 ---
 
 

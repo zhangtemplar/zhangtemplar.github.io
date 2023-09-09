@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CVPR 2019 Paper from Nvidia
-tags: cvpr 2019 nvidia
+tags:  cvpr nvidia 2019
 ---
 
 # Oral

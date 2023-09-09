@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Human Vision Specification
-tags: human vision eye eyeball iris pupil field-of-view fov resolution focal-length
+tags:  pupil field-of-view fov human eyeball iris resolution focal-length vision eye
 ---
 This document describes the specifications of typical human vision system: resolution 576 megapixels with eye movement or 324 megapixels at a single glint; angle of view is around 180°; light sensitivity is about ISO 800; dynamic range is 1 billion to 1 with adjustment or 10000 to 1 with a single glint; focal length at 22mm and aperture size at F/3.2.
 

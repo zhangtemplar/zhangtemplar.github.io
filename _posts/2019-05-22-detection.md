@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object Detection Update (2019/1~2019/3)
-tags: deep-learning object-detection
+tags:  deep-learning object-detection
 ---
 
 > Reference: [awesome object detection](https://github.com/amusi/awesome-object-detection) and [一文看尽21篇目标检测最新论文（腾讯/Google/商汤/旷视/清华/浙大/CMU/华科/中科院等）](https://zhuanlan.zhihu.com/p/61080508?utm_source=wechat_session&utm_medium=social&utm_oi=794855414373183488)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Image Alignment
-tags: deep-learning image alignment
+tags:  deep-learning alignment image
 ---
 
 ![](https://mmbiz.qpic.cn/mmbiz_png/KmXPKA19gW85v9gh2Dv2npxyiagtYaQiabicjc5m97mHnpUGAmnMQGr5Q8tRiasZtABBJHcQQticIlnde1muq6gssHA/640?wx_fmt=png&tp=webp&wxfrom=5&wx_lazy=1&wx_co=1)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Diffusion Model
-tags: deep-learning diffusion GAN denoising autoregressor
+tags:  denoising autoregressor diffusion deep-learning gan
 ---
 
 This is my 1st reading note of on recent progress of difussion model. It is based on [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796v6). Diffusion probabilistic models were originally proposed as a latent variable generative model inspired by non-

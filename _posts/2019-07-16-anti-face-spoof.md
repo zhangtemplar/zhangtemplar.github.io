@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Anti Face Spoofing
-tags: deep-learning anti-face-spoofing
+tags:  deep-learning anti-face-spoofing
 ---
 
 ![](https://paperswithcode.com/media/tasks/facial-anti-spoofing_gHfingq.png)

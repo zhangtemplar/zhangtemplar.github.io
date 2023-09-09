@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Weather Station and Photo Frame from InkPlate 10
-tags: weather photo ardunio esp32 e-ink inkplate-10
+tags:  ardunio inkplate-10 e-ink esp32 photo weather
 ---
 
 [inkplate_weather_photo](https://github.com/zhangtemplar/inkplate_weather_photo) includes code for building a weather station and photo frame from [Inkplate 10](https://inkplate.readthedocs.io/).

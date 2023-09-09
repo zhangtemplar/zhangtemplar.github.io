@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Diff-Instruct A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models
-tags:  diffusion deep-learning gan distill kl-divergence dreamfusion score-distillation-sampling
+tags:  score-distillation-sampling kl-divergence diffusion deep-learning dreamfusion distill gan
 ---
 
 This is my reading note on [Diff-Instruct: A Universal Approach for Transferring Knowledge From Pre-trained Diffusion Models](http://arxiv.org/abs/2305.18455). The paper explains the theory of using a pre-trained diffusion model to guide the training of a generator model.it shows that both DreamFusion and GAN are a special case of it: score distillation sampling (SDS) from DreamFusion uses Dirac distribution to represent the generator while GAN learns a discriminator to represents the distribution of data. To this end, it proposes IKL, which is tailored for DMs by calculating the integral of the KL divergence along a diffusion process (instead of a single step), which we show to be more robust in comparing distributions with misaligned supports.

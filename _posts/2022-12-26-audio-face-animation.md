@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multimodality face animation model
-tags: face-tracking face-animation arvr avatar meshtalk jali avface faceformer vatt
+tags:  avface arvr jali face-animation face-tracking meshtalk faceformer vatt avatar
 ---
 
 Audio-vision modaility model could improve the quality of face tracking (in speech) as well the robustness (when face get occluded) over vision based solutions. This is my reading note on Audio-vision modaility face tracking.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How to Evaluate a Company for Investment
-tags: finance
+tags:  finance
 ---
 
 This article is mostly based on my understanding of [段永平投资问答录](https://book.douban.com/subject/35254511/) and [The Essays of Warren Buffett: Lessons for Investors and Managers](https://book.douban.com/subject/1046164/). Both books recommends value investing and their authors have been very successful in their investment.

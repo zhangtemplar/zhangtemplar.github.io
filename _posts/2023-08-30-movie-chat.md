@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MovieChat From Dense Token to Sparse Memory for Long Video Understanding
-tags:  deep-learning multimodal transformer video-chat movie-chat video-llama video-chatgpt
+tags:  transformer video-chat deep-learning video-llama video-chatgpt multimodal movie-chat
 ---
 
 This is my reading note on [MovieChat: From Dense Token to Sparse Memory for Long Video Understanding](http://arxiv.org/abs/2307.16449). This paper proposes a method for long video understands it utilizes existing image encoder to extract tokens form the video via sliding window. A short term memory is a FIFO of those tokens, a long term memory is to merge the similar tokens. Those short term memory and long term memory are then appended after the question and feed to the LLM. The alignment of visual features to LLM purely depends on the existing image encoder.

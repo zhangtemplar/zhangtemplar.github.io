@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ProlificDreamer High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation
-tags:  deep-learning 3d diffusion distill dreamfusion prolific-dreamer score-distillation-sampling sds variational-score-distillation vsd text2image
+tags:  score-distillation-sampling text2image prolific-dreamer diffusion vsd deep-learning dreamfusion distill variational-score-distillation 3d sds
 ---
 
 This is my reading note on [ProlificDreamer High-Fidelity and Diverse Text-to-3D Generation with Variational Score Distillation](http://arxiv.org/abs/2305.16213). This method proposes variational score sampling to replace score distillation sampling to improve the details of text to image or text to 3D models. Project page: https://ml.cs.tsinghua.edu.cn/prolificdreamer/

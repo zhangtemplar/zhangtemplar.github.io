@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 3D Object Detection
-tags: deep-learning 3d-object-detection
+tags:  deep-learning 3d-object-detection
 ---
 
 ![](https://paperswithcode.com/media/thumbnails/task/task-0000000785-04017634.jpg)

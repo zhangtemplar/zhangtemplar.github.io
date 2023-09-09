@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Why Backdoor Conversion to Roth
-tags: finance
+tags:  finance
 ---
 
 I have heard about recommendations of [converting regular traditional IRA/401K to Roth via backdoor](https://www.investopedia.com/terms/b/backdoor-roth-ira.asp). After reading an internal post from company I finally understood why.

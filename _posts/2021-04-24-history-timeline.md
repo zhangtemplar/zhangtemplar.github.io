@@ -1,7 +1,7 @@
 ---
 layout: post
 title: World History Timeline with Map
-tags: world history timeline altas map
+tags:  history timeline world map altas
 ---
 
 Note this website is based on work from [The World History and Atlas](http://x768.com/w/twha.ja). There is a version with 3D map in [历史时间线](http://gonnavis.com/timeline/twha/).

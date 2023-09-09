@@ -1,7 +1,7 @@
 ---
 layout: post
 title: NeuralField-LDM Scene Generation with Hierarchical Latent Diffusion Models
-tags:  3d diffusion nerf deep-learning PixelNeRF IBRNet hierarchical Nerfusion GAUDI autoencoder latent
+tags:  gaudi latent ibrnet diffusion deep-learning autoencoder nerfusion nerf pixelnerf 3d hierarchical
 ---
 
 This is my reading note on [NeuralField-LDM Scene Generation with Hierarchical Latent Diffusion Models](http://arxiv.org/abs/2304.09787). It trains auto-encoder to project RGB images of scene with camera pose into the latent space (voxel-nerf). It uses three levels of latent to represent the scene and then uses hierarchical latent diffusion model to represent it.

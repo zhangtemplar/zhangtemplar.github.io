@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Overview of Normalization Methods in Deep Learning
-tags: deep-learning normlization batch-normalization group-normalization
+tags:  normlization deep-learning group-normalization batch-normalization
 ---
 
 ![](https://i1.wp.com/mlexplained.com/wp-content/uploads/2018/11/Screen-Shot-2018-11-28-at-4.56.06-PM.png?w=522)

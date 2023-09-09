@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Visual Localization via Deep Learning
-tags: deep-learning visual-localization 3d camera-estimation
+tags:  deep-learning visual-localization camera-estimation 3d
 ---
 
 Visual localization aims to estimate the localization, which is usually the the coordinate (orientation and localization) in the world coordindately, given one or multiple images. 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Comparing Redfin, Zillow and OpenDoor
-tags: finance redfin zillow opendoor rdfn z open real-estate broker ibuy imt 
+tags:  broker redfin zillow z ibuy opendoor finance real-estate open imt rdfn
 ---
 This post compares three stocks in estate: [Redfin](https://www.redfin.com), [Zillow](https://www.zillow.com) and [OpenDoor](https://www.opendoor.com/). I try to use the their 2020's earning report for my analysis.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Optimal Option Strike Price vs Future Price
-tags: finance option strike black-scholes
+tags:  strike finance option black-scholes
 ---
 This post we studies the profit of call options for different strike price and price change. The goal is for the given current price and volacity level, expiration date and ticket, find the most profitable strike price for different future price change. Please read [Option Pricing Model](/option-pricing) for background knowledge the option pricing. 
 

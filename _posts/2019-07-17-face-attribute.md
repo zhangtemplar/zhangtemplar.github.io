@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Face Attribute in CVPR 2019
-tags: deep-learning face-attribute expression-transfer style-transfer
+tags:  expression-transfer deep-learning face-attribute style-transfer
 ---
 
 ![](http://www.graphics.stanford.edu/~niessner/papers/2015/10face/teaser.jpg)

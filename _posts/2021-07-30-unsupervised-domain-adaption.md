@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Unsupervised Domain Adaption
-tags: deep-learning cvpr 2021 tutorial self-supervise domain-adaption advserial reconstruction discrepancy normalization optimal-transport teacher-student
+tags:  2021 tutorial optimal-transport deep-learning domain-adaption discrepancy self-supervise advserial normalization cvpr reconstruction teacher-student
 ---
 
 This is my reading note on [CVPR 2021 Tutorial: Data- and Label-Efficient Learning in An Imperfect World](https://vita-group.github.io/cvpr_2021_data_efficient_tutorial.html). The original [slides](https://utexas.box.com/s/6mdtvt1wj8hsojzen918xekjyh43zxtx) and [videos](https://utexas.box.com/s/ph3xebwa2hri404k8sml5kfovgi4ak1k) are available online. Unsupervised domain adaption methods could be divided into the following groups:

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Must-read AI Papers
-tags: deep-learning alexnet resnet gan gpt-3 word2vec capsnet bert deep-q reformer
+tags:  word2vec bert capsnet deep-learning deep-q reformer gan resnet alexnet gpt-3
 ---
 
 I will create a new reading note series based on [Must-read AI Papers](https://crossminds.ai/playlist/6011f07becbeebc970a2ef20/?utm_campaign=41c4d93aa41f8b49&utm_medium=share) from Crossminds.ai.

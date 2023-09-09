@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Object Detection Paper (Oral) in CVPR 2019
-tags: cvpr object-detection
+tags:  cvpr object-detection
 ---
 
 # [Bi-Directional Cascade Network for Perceptual Edge Detection](https://arxiv.org/pdf/1902.10903)

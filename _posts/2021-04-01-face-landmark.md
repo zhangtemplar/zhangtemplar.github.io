@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Paper Reading List For Facial Landmark Detection
-tags: deep-learning face landmark-detection head-pose
+tags:  landmark-detection head-pose deep-learning face
 ---
 Facial landmark detection is the task of detecting key landmarks on the face and tracking them (being robust to rigid and non-rigid facial deformations due to head movements and facial expressions).
 

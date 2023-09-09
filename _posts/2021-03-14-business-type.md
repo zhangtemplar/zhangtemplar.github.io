@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Difference between Us Business Entities
-tags: finance business tax llc sole-proprietorship partnership s-corp c-corp 
+tags:  sole-proprietorship finance business partnership llc s-corp tax c-corp
 ---
 This is my reading note for [C Corp vs. S Corp, Partnership, Proprietorship, and LLC: What Is the Best Business Entity?](https://www.toptal.com/finance/interim-cfos/c-corp-vs-s-corp). You may consider to create a business probably to save some tax. There are different type of busniess entities in US and you should understand the differences between them before decide which type to choose.
 

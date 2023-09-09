@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation
-tags: deep-learning transformer diffusion image-caption dreambooth text-image-synthesize
+tags:  transformer image-caption diffusion dreambooth deep-learning text-image-synthesize
 ---
 This is my reading note on [DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242v1). Given as input just a few (3~5) images of a subject, DreamBooth fine-tune a pretrained text-to-image model such that it learns to bind a unique identifier with that specific subject. Once the subject is embedded in the output domain of the model, the unique identifier can then be used to synthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, DreamBooth enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images. (check Figure 1 as an example)
 
