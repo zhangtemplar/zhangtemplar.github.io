@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My Paper Reading List for 3D Face Reconstructions
-tags:  mesh prnet deep-learning 3ddfa ganfit deca gan cvpr avatarme face-reconstruction 2dasl 3d avatar
+tags:  deca 3ddfa deep-learning mesh avatarme ganfit face-reconstruction prnet avatar 3d 2dasl cvpr gan
 ---
 Here is my paper reading lsit for 3D face reconstructions based on [Papers with Code](https://paperswithcode.com/task/3d-face-reconstruction). 3D face reconstruction is the task of reconstructing a face from an image into a 3D form (or mesh). Most of the papers on the list are between 2017~2020.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: InstructDiffusion A Generalist Modeling Interface for Vision Tasks
-tags:  diffusion deep-learning image2image multimodal segment text2image object-detection
+tags:  image2image deep-learning diffusion object-detection segment multimodal text2image
 ---
 
 This is my reading note for [InstructDiffusion: A Generalist Modeling Interface for Vision Tasks](http://arxiv.org/abs/2309.03895). This paper formulated many vision tasks like segmentation and key point detection as text guided image edit task, and thus can be modeled by diffusion based image edit model. To to that, this paper collects a dataset of different vision tasks, each item contains source image, vision task as text prompt and target image as vision results.

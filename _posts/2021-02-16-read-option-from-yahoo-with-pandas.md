@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Get Option Data from Yahoo with Pandas
-tags:  option pandas finance
+tags:  finance pandas option
 ---
 This notebook shows how to read the option chain data from Yahoo finance with Pandas. Especially we will use `pandas.read_html`.
 

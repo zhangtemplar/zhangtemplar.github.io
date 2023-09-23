@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Encoding Method for NERF
-tags:  cnn hash-encoding differential-rendering deep-learning multi-resolution mlp nerf frequency-encoding sinusoid-encoding
+tags:  frequency-encoding deep-learning nerf differential-rendering sinusoid-encoding multi-resolution cnn mlp hash-encoding
 ---
 [Instant Neural Graphics Primitives with a Multiresolution Hash Encoding](http://arxiv.org/abs/2201.05989) tries to reduce inference cost with a versatile new input encoding that permits the use of a smaller network without sacrificing quality. This is achieved via a small neural network is augmented by a multiresolution hash table of trainable feature vectors whose values are op- timized through stochastic gradient descent.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Face Landmark Detection
-tags:  deep-learning face face-landmark face-landmark-detection
+tags:  deep-learning face-landmark-detection face-landmark face
 ---
 
 ![](https://cdn-images-1.medium.com/max/1200/1*Db5cCH72jLsV5lrgdAs78Q.jpeg)

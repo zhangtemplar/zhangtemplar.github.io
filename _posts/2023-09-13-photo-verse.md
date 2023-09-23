@@ -1,7 +1,7 @@
 ---
 layout: post
 title: PhotoVerse Tuning-Free Image Customization with Text-to-Image Diffusion Models
-tags:  diffusion deep-learning text2image personalize dream-booth textual-inversion dream-artist custom-diffusion e4t instant-booth suti profusion
+tags:  suti custom-diffusion deep-learning instant-booth diffusion profusion dream-booth personalize e4t dream-artist textual-inversion text2image
 ---
 
 This is my reading note for [PhotoVerse: Tuning-Free Image Customization with Text-to-Image Diffusion](https://photoverse2d.github.io/). This paper proposes a fine tune free personalized image edit method bases on diffusion. To this end it proposes dual branch to encode text and image feature. Lora is used to update the existing model. it also proposed to use a random fusion injection to condition the attention with image and text embedding. **However the paper fails to describe why this random fusion injection is needed.**

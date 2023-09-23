@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Mobile V-MoEs Scaling Down Vision Transformers via Sparse Mixture-of-Experts
-tags:  deep-learning multimodal transformer mixture-of-experts
+tags:  deep-learning transformer mixture-of-experts multimodal
 ---
 
 This is my reading note for [Mobile V-MoEs Scaling Down Vision Transformers via Sparse Mixture-of-Experts](http://arxiv.org/abs/2309.04354). This paper proposes a new mixture of experts to reduce the cost of vision transformer. There are two contributions, I) use image level instead of patch level mixture to reduce cost; 2) use super class based router to select experts so each expert could focus on a few related class.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Different Types of Convolutions in Deep Learning
-tags:  transposed-convolution deep-learning dilated-convolution pointwise-convolution separable-convolution convolutions grouped-convolution depthwise-convolution
+tags:  transposed-convolution deep-learning grouped-convolution separable-convolution depthwise-convolution pointwise-convolution dilated-convolution convolutions
 ---
 
 Besides the convolution operator we already found in AlexNet or VGG16, there are few variations, which will be introduced below. The content of this article is based on reading of [An Introduction to different Types of Convolutions in Deep Learning

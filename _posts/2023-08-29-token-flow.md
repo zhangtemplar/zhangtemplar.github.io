@@ -1,7 +1,7 @@
 ---
 layout: post
 title: TokenFlow Consistent Diffusion Features for Consistent Video Editing
-tags:  text2live video-editing diffusion tokenflow deep-learning text2video-zero text2video tune-a-video
+tags:  deep-learning video-editing text2live diffusion text2video-zero text2video tokenflow tune-a-video
 ---
 This is my reading note on [TokenFlow Consistent Diffusion Features for Consistent Video Editing](https://diffusion-tokenflow.github.io/), which is diffusion based on video editing method. This paper proposes a method to edit a video given text prompt. To do this, the paper relies on two things. First, it extracts bey lames from video and perform image on those key frames jointly. In addition, the paper found that the feature in diffusion has strong correspondence to the pixels. As a results it propose to propagate the features of edited key frames to other frames, accord to the correspondence in the original video.
 

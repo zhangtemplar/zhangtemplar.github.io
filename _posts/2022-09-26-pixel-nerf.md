@@ -1,7 +1,7 @@
 ---
 layout: post
 title: pixelNeRF Neural Radiance Fields from One or Few Images
-tags:  cnn differential-rendering deep-learning mlp nerf pixelnerf
+tags:  pixelnerf deep-learning nerf differential-rendering cnn mlp
 ---
 
 [pixelNeRF: Neural Radiance Fields from One or Few Images](https://arxiv.org/abs/2012.02190v3) tries to learn a discontinuous neutral scene representation from one or few input images. To this end, pixelNeRF introduced an architecture that conditions a NeRF on image inputs in a fully convolutional manner. This allows the network to be trained across multiple scenes to learn a scene prior, enabling it to perform novel view synthesis in a feed-forward manner from a sparse set of views (as few as one).

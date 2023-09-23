@@ -1,7 +1,7 @@
 ---
 layout: post
 title: StableVideo Text-driven Consistency-aware Diffusion Video Editing
-tags:  nla text2live read diffusion dreambooth neural-atlas-layers dreamix text2video
+tags:  dreambooth read neural-atlas-layers text2live nla diffusion text2video dreamix
 ---
 
 This is my reading note on [StableVideo: Text-driven Consistency-aware Diffusion Video Editing](https://github.com/rese1f/StableVideo). This paper proposes a video editing method based on diffusion. To ensure temporal consistency, the method utilizes neural atlas and inter frame interpolation. The neural atlas separate the videos into foreground and background plane. The lattes defines the mapping of pixel in frame to u v coordinate in atlas. For inter frame interpolation, the edited imago from diffusion is mapping to next frame via atlas, which is then use as initial to denote to the final contents of this frame.

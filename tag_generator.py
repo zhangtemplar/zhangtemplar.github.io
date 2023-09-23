@@ -32,7 +32,9 @@ def canonize_tag(line: str) -> str:
         t = t.lower()
         if t in mapping:
             t = mapping[t]
+        t = t.replace("-to-", "2")
         new_tags.add(t.replace("\n", ""))
+        # -to- to 2
     return "tags: " + " ".join(new_tags) + "\n"
 
 

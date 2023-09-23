@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FineRecon Depth-aware Feed-forward Network for Detailed 3D Reconstruction
-tags:  3d deep-learning voxel volume sfm struction-from-motion signed-distance-function sdf
+tags:  sdf deep-learning nerf voxel 3d struction-from-motion sfm signed-distance-function
 ---
 
 This is my reading note for [FineRecon: Depth-aware Feed-forward Network for Detailed 3D Reconstruction](http://arxiv.org/abs/2304.01480). It proposes  a high detail surface reconstruction algorithm based voxel volume and multi-view geometry. Two major novelties: improve reconstruction accuracy using a novel MVS depth-guidance strategy and enable the reconstruction of sub-voxel detail with a novel TSDF prediction architecture that can be queriedat any 3D point, using point back-projected fine-grained image features.

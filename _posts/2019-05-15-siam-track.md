@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Siamese Network Based Single Object Tracking
-tags:  siamfc cfnet c-rpn siamese deep-learning single-object-tracking mbst cir siamrpn structsiam dsiam dasiamrpn siammask densesiam sa-siam siam-bm siamfc-tri sint++ rasnet sint
+tags:  siamese c-rpn dasiamrpn cir sint single-object-tracking dsiam siamfc-tri sa-siam sint++ densesiam siammask structsiam siamfc mbst deep-learning siam-bm rasnet cfnet siamrpn
 ---
 
 Siamese network is an artificial neural network that use the same weights while working in tandem on two different input vectors to compute comparable output vectors.

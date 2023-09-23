@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Effcient Deep Neural Network
-tags:  deep-learning mobilenet mixnet flattened-network factorized-network squeezenet xception-network
+tags:  flattened-network deep-learning xception-network mixnet mobilenet squeezenet factorized-network
 ---
 
 In this post, we will introduce some neural networks which are suitable for running on mobile devices.

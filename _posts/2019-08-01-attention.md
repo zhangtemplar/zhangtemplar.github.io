@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Self Attention
-tags:  deep-learning attention
+tags:  attention deep-learning
 ---
 
 ![](https://i2.wp.com/mlexplained.com/wp-content/uploads/2017/12/attention_path_length.png?fit=1200%2C658)

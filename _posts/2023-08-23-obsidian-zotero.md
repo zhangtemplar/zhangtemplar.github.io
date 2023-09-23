@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Set up Obsidian to Work with Zotero
-tags:  obsidian zotero github jekyii
+tags:  zotero obsidian github jekyii
 ---
 
 This is my set up to enable Obsidian work with Zotero to export Zotero note and publish to my [Github website](https://zhangtemplar.github.io/). You could create your own website on Github using [JekyII](https://github.com/barryclark/jekyll-now), which requires you to create markdown files with a specific front matter format. Then Github will publish your markdown files to html.

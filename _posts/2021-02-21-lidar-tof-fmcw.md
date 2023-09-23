@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Time of Flight vs. FMCW LiDAR
-tags:  tof fmcw time-of-flight lidar
+tags:  fmcw time-of-flight lidar tof
 ---
 
 [AEye.ai](https://www.aeye.ai/) shared [comparison](https://www.aeye.ai/whitepapers/time-of-flight-vs-fmcw-lidar-a-side-by-side-comparison/) of time of flight (ToF) and Frequency Modulated Continuous Wave (FMCW). I had worked in ToF when I was in Samsung (2014~2016) and am very interested in learning more of it.

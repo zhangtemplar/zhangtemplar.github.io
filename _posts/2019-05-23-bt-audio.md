@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Bluetooth Audio
-tags:  sbc aac bluetooth audio aptx ldac
+tags:  sbc bluetooth audio aac ldac aptx
 ---
 
 > [Bluetooth](https://en.wikipedia.org/wiki/Bluetooth) is a wireless technology standard for exchanging data between fixed and mobile devices over short distances using short-wavelength UHF radio waves in the industrial, scientific and medical radio bands, from 2.400 to 2.485 GHz, and building personal area networks (PANs). It was originally conceived as a wireless alternative to RS-232 data cables.

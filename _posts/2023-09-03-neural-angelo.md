@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Neuralangelo High-Fidelity Neural Surface Reconstruction
-tags:  deep-learning nerf 3d instant-ngp
+tags:  deep-learning nerf instant-ngp 3d
 ---
 
 This is my reading note on [Neuralangelo: High-Fidelity Neural Surface Reconstruction](http://arxiv.org/abs/2306.03092). This paper proposes a method to reconstruct 3D surface at very high details. The proposed method is based on two improvements: 1) use numerical gradient instead of analytical one to remove non locality 2) use multi resolution instant NGP improve details from coarse to fine.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Knowledge Distillation A Survey
-tags:  deep-learning review distill
+tags:  distill deep-learning review
 ---
 This is my reading note on [Knowledge Distillation: A Survey](http://arxiv.org/abs/2006.05525). As a representative type of model compression and acceleration, knowledge distillation effectively learns a small student model from a large teacher model [(p. 1)](zotero://open-pdf/library/items/8265TF5E?page=1&annotation=LDB2MZTV)
 

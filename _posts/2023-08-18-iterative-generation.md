@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scalable Adaptive Computation for Iterative Generation
-tags:  text2image recurrent-neural-network diffusion deep-learning unet text2video
+tags:  deep-learning diffusion text2video recurrent-neural-network unet text2image
 ---
 This is my reading note on [Scalable Adaptive Computation for Iterative Generation](http://arxiv.org/abs/2212.11972) The major innovation here is to map the input token to latents, which is shorter. The latents could be initialized from previous iterations (of diffusion process). As a result, the new method could achieve similar visual fidelity as regular diffusion method but with 1/10 of cost.
 # Introduction

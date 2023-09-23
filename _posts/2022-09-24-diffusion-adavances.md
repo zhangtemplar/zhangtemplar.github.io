@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Recent Adavances of Diffusion Models
-tags:  distillation diffusion deep-learning glide audio-synthesize video-diffusion unclip clip autoregressive text-image wavegrad image-synthesize
+tags:  glide deep-learning distillation diffusion wavegrad unclip text-image video-diffusion image-synthesize autoregressive audio-synthesize clip
 ---
 
 This is my 4th note in Diffusion models. For the previous notes, please refer to [diffusion](https://zhangtemplar.github.io/diffusion/) and [stable diffusion](https://zhangtemplar.github.io/stable_diffusion/). My contents are based on paper listed in [Diffusion Explained](https://paperswithcode.com/method/diffusion) and [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2209.00796v6).

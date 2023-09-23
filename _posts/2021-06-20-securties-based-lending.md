@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Securities-Based Lending
-tags:  libor sbl margin finance securities-based-lending
+tags:  sbl securities-based-lending margin finance libor
 ---
 [Securities-Based Lending](https://www.investopedia.com/terms/s/securitiesbased-lending.asp) or 股权质押 refers to the practice of making loans using [securities](https://www.investopedia.com/terms/s/security.asp) as [collateral](https://www.investopedia.com/terms/c/collateral.asp). Securities-based lending provides ready access to capital that can be used for almost any purpose such as buying real estate, purchasing property like jewelry or a sports car, or investing in a business. The only restrictions to this kind of lending are other securities-based transactions like buying shares or repaying a [margin loan](https://www.investopedia.com/terms/m/margin_loan_availability.asp).
 

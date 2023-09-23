@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Low Dimensional Embedding
-tags:  laplacian-eigenmap isomap lle mds deepwalk
+tags:  isomap lle mds deepwalk laplacian-eigenmap
 ---
 
 Low dimensional embedding is a method which maps the vertices of a graph into a low dimension vector space under certain constraint.

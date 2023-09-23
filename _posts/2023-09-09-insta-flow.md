@@ -1,7 +1,7 @@
 ---
 layout: post
 title: InstaFlow One Step is Enough for High-Quality Diffusion-Based Text-to-Image Generation
-tags:  diffusion deep-learning text2image distill ode rectified-flow instantflow progressive-distillation
+tags:  deep-learning diffusion ode rectified-flow distill text2image progressive-distillation instantflow
 ---
 
 This is my reading note on [InstaFlow One Step is Enough for High-Quality Diffusion-Based Text-to-Image](https://github.com/gnobitab/InstaFlow). This paper proposes a way to speed up diffusion based method, by achieving high fidelity with one step of diffusion. The key to this method is to use rectified how to straighten the probability flow from model to the final image. After that the model could be distilled to one step diffusion.

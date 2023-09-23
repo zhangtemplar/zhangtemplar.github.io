@@ -1,7 +1,7 @@
 ---
 layout: post
 title: OmnimatteRF Robust Omnimatte with 3D Background Modeling
-tags:  nerf deep-learning 3d video-inpainting omnimatte matte d2nerf
+tags:  d2nerf deep-learning nerf omnimatte 3d matte video-inpainting
 ---
 
 This is my reading note on [OmnimatteRF: Robust Omnimatte with 3D Background Modeling](http://arxiv.org/abs/2309.07749). The paper proposes a method for video matting. It models the background as a 3D nerf and each foreground object as 2D image

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Landmark Detection for Animal Face and 3D Reconstructions
-tags:  landmark-detection 3dmm cat deep-learning pet face animal dog keypoint-detection
+tags:  deep-learning pet landmark-detection cat keypoint-detection face animal dog 3dmm
 ---
 This is my literature survey of landmark detection and 3D reconstruction for cat and dog's face.
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Link-Context Learning for Multimodal LLMs
-tags:  deep-learning llm multimodal bad context
+tags:  llm deep-learning bad context multimodal
 ---
 This is my meeting note for [Link-Context Learning for Multimodal LLMs](https://github.com/isekai-portal/Link-Context-Learning). It presents a demo of how to use positive and negative example to tell L L m to recognize novel concept.
 

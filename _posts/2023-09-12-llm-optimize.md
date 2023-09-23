@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Large Language Models as Optimizers
-tags:  deep-learning llm tool optimizer linear-regression traveling-salesman-problem
+tags:  llm tool deep-learning optimizer traveling-salesman-problem linear-regression
 ---
 
 This is my reading note for [Large Language Models as Optimizers](http://arxiv.org/abs/2309.03409). This paper discusses how to prompt larger language model to solve optimization problem, especially how to engineer the prompt to solve the optimization problem. The experiments indicate LLM is capable of solve optimization problem reasonable well, especially when problem is small and starting problem is not far from the final solution.
