@@ -1,6 +1,6 @@
 ---
 layout: post
-title: DualToken-ViT: Position-aware Efficient Vision Transformer with Dual Token Fusion
+title: DualToken-ViT Position-aware Efficient Vision Transformer with Dual Token Fusion
 tags:  transformer multimodal deep-learning convolution attention vit token light-vit
 ---
 
