@@ -16,4 +16,4 @@ I would like to cite [西方哲学史思维导图+脉络图（完整版）](http
 
 ![IMG_0066](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/v2-e4874d84b7ea34c581ebc6f5da0a996b_r.jpg)
 
-![IMG_0067](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/v2-e4874d84b7ea34c581ebc6f5da0a996b_r.jpg)
+![IMG_0067](https://raw.githubusercontent.com/zhangtemplar/zhangtemplar.github.io/master/uPic/v2-1266524d63aba1b7303c77f5044475b0_r.jpg)
