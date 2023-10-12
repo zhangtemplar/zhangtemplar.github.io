@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Comprehensive Survey on Multimodal Recommender Systems: Taxonomy, Evaluation, and Future Directions
+title: A Comprehensive Survey on Multimodal Recommender Systems Taxonomy, Evaluation, and Future Directions
 tags:  deep-learning multimodal review recommendation
 ---
 
