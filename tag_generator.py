@@ -12,7 +12,7 @@ def create_tag(tag: str, tag_path: str):
     with open(tag_name, "w") as fo:
         content = f"""---
 layout: tagpage
-title: "Reading Note on Deep Learning"
+title: "Reading Note on {tag}"
 tag: {tag}
 ---
 """
