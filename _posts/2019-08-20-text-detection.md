@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Text Detection
-tags:  textmountain deep-learning pixelink advancedeast text-detection textfield craft psenet pmtd east
+tags:  advancedeast textfield craft pixelink text-detection pmtd psenet deep-learning east textmountain
 ---
 
 In this post, we will introduce some of the most recent text detection methods. Text detection methods are highly related to object detection methods, thus could be categorized into one-stage methods and two-stage methods. Currently, two-stage methods could easily outperforms one-stage methods, e.g., using Mask-RCNN directly could give you 76% mAP on icdar2017mlt, while the current state of art methods psenet achieves 72%.

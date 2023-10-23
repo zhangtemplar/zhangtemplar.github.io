@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Blended Latent Diffusion
-tags:  diffusion deep-learining image2image blended-diffusion glide dall-e2 vae variational-auto-encoder palette sdedit gan style-gan paint-by-words
+tags:  deep-learining diffusion blended-diffusion sdedit gan variational-auto-encoder glide dall-e2 style-gan palette vae image2image paint-by-words
 ---
 
 This is my reading note for [Blended Latent Diffusion](http://arxiv.org/abs/2206.02779). The major innovation of the paper is to apply mask in latent space instead of image space to reduce boundary inconsistency, as the foreground is generated from the VAE but the background is not. in addition to handle the thin detail of mask got lost due to downs sample step, it dilate the mask first.

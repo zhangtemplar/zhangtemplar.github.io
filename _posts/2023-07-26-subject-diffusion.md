@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Subject-Diffusion Open Domain Personalized Text-to-Image Generation without Test-time Fine-tuning
-tags:  diffusion deep-learning text2image personalize stable-diffusion ediffi glide dall-e2 imagen clip dreambooth lora mix-of-show cones InstructPix2Pix umm-diffusion taming-encoder instant-booth fast-composer blip blip-diffusion elite segment-anything
+tags:  imagen mix-of-show personalize instructpix2pix dreambooth elite lora fast-composer diffusion segment-anything deep-learning instant-booth text2image taming-encoder blip-diffusion clip blip cones glide dall-e2 umm-diffusion stable-diffusion ediffi
 ---
 
 This is my reading note for [Subject-Diffusion:Open Domain Personalized Text-to-Image Generation without Test-time Fine-tuning](https://oppo-mente-lab.github.io/subject_diffusion/). This paper propose a diffusion method to generate images with given visual concepts and text prompt. Especially the paper is able to hand multiple visual concert jointly. To handle that, the paper detect the visual concepts from the input images, then the segmented images and bounding box are encoded feed into latent diffusion model. To enhance the consistency, the visual embedding is inserted into the text encode of the prompt.

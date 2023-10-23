@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Segment Anything Meets Point Tracking
-tags:  transformer tracking deep-learning segment-anything sam point-tracking tracking-anything sam-track seg-gpt raft xmem deoat persam dino
+tags:  sam-track tracking tracking-anything raft xmem deoat persam dino segment-anything deep-learning transformer seg-gpt sam point-tracking
 ---
 
 This is my reading note for [Segment Anything Meets Point Tracking](https://github.com/SysCV/sam-pt). This paper combines SAM with point tracker to perform object segment and tracking in video. To to that it use point tracker to track points through the frames.for points of each frame SAM generate masks from the points promote. After every 8 frames, new points will be sampled from the mask.for best performance, 8 positive points and l negative points is recommended.

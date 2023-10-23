@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Optical Flow
-tags:  deep-learning optical-flow lucas-kanade klt flownet
+tags:  klt flownet deep-learning optical-flow lucas-kanade
 ---
 
 ![](https://developer.nvidia.com/sites/default/files/akamai/designworks/opticalflow/OF_SDK_000.png)

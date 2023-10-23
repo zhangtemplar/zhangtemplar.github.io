@@ -1,7 +1,7 @@
 ---
 layout: post
 title: InstructBLIP Towards General-purpose Vision-Language Models with Instruction Tuning
-tags:  deep-learning llm multimodal blip llava qformer query-transformer llama vicuna flat-t5
+tags:  vicuna multimodal llm blip query-transformer llama qformer deep-learning llava flat-t5
 ---
 
 This is my reading note for [InstructBLIP: Towards General-purpose Vision-Language Models with Instruction Tuning](https://github.com/salesforce/LAVIS/tree/main/projects/instructblip). The paper proposes an extension of blip 2 with institution tuning. This has dramatically improved the performance to unseen tasks. The method is based on query transformer, but adding the tokens from the instruction to guide the feature extraction.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Large-scale Multi-Modal Pre-trained Models A Comprehensive Survey
-tags:  multimodal review deep-learning pretrain foundation-model contrast-loss masked-language-modeling masked-image-modeling image-text-matching
+tags:  masked-language-modeling multimodal contrast-loss masked-image-modeling deep-learning review image-text-matching pretrain foundation-model
 ---
 
 This is my reading note for [Large-scale Multi-Modal Pre-trained Models: A Comprehensive Survey](https://github.com/wangxiao5791509/MultiModal_BigModels_Survey). It provides an OK review for multimodality pre-trained models without diving too much into details.

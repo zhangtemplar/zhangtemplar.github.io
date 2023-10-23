@@ -1,7 +1,7 @@
 ---
 layout: post
 title: ProPainter Improving Propagation and Transformer for Video Inpainting
-tags:  deep-learning transformer tracking video-inpainting
+tags:  tracking video-inpainting deep-learning transformer
 ---
 
 This is my reading note for [ProPainter: Improving Propagation and Transformer for Video Inpainting](http://arxiv.org/abs/2309.03897). This paper proposes a video inpainting method which remove object from video while reserving spatial temporal consistency. The paper is based on flow based transformer. Two contributions are made, 1) the consistency to improve flow performance which is applied to both image and feature; 2) reduce the # of tokens of than Horner both spatially and temporally.

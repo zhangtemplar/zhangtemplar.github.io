@@ -1,7 +1,7 @@
 ---
 layout: post
 title: HyperDreamBooth HyperNetworks for Fast Personalization of Text-to-Image Models
-tags:  diffusion deep-learning image2image personalize dreambooth hyper-dreambooth textual-inversion custom-diffusion sv-dff style-drop dream-artist instant-booth taming-encoder fast-composer 
+tags:  style-drop fast-composer diffusion taming-encoder hyper-dreambooth personalize custom-diffusion textual-inversion deep-learning instant-booth dreambooth dream-artist image2image sv-dff
 ---
 
 This is my reading note for [HyperDreamBooth: HyperNetworks for Fast Personalization of Text-to-Image Models](https://hyperdreambooth.github.io). This paper improves DreamBooth by applying LORA to improve speed.

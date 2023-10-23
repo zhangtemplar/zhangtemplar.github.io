@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Modern Convolution Neutral Network
-tags:  deep-learning mobilenet efficientnet alexnet googlenet resnext resnet vgg xception regnet cnn densenet
+tags:  alexnet mobilenet cnn googlenet densenet efficientnet xception deep-learning resnext resnet regnet vgg
 ---
 
 Convolutional Neural Networks (ConvNets or CNNs) are a class of neural networks algorithms that are mostly used in visual recognition tasks such as [image classification](https://twitter.com/Jeande_d/status/1462040682437120001), object detection, and image segmentation. The use of ConvNets in visual recognition is inarguably one of the [biggest inventions of decade 2010s in deep learning community](https://twitter.com/Jeande_d/status/1501188511281549321?s=20&t=dCZzcKKoXgvVL_8ebVDclg).

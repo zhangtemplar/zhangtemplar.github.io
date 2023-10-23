@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vision Transformers Need Registers
-tags:  transformer deep-learning self-supervised zero-shot-learning clip vit attention
+tags:  attention clip vit self-supervised deep-learning transformer zero-shot-learning
 ---
 
 This is my reading note for [Vision Transformers Need Registers](http://arxiv.org/abs/2309.16588). This paper analyzes the attention map of transformer and find too large scale transformer and trained after a long iteration, some token show exceptionally high norm. Those tokens usually correspond to patches in uniform background. Analysis indicates that those tokens are used to store global information. Thus at would heart dense prediction tasks like image segmentation. To tackle this, the paper proposes add additional tokens during trains and inference, but rejecting for outputs.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Transformer in Computer Vision
-tags:  transformer deep-learning
+tags:  deep-learning transformer
 ---
 
 [Transformer](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html) architecture has achieved state-of-the-art results in many NLP (Natural Language Processing) tasks. Though CNN has been the domiant models for CV tasks, using [Transformers](http://jalammar.github.io/illustrated-transformer/) for vision tasks became a new research direction for the sake of reducing architecture complexity, and exploring scalability and training efficiency.

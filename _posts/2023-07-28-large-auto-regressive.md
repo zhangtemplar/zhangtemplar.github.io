@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Jointly Training Large Autoregressive Multimodal Models
-tags:  llm transformer multimodal deep-learning text2image auto-regressive cm3leon attention cross-modality-fusion vq-vae
+tags:  attention multimodal llm auto-regressive cross-modality-fusion deep-learning vq-vae transformer text2image cm3leon
 ---
 
 This is my reading note for [Jointly Training Large Autoregressive Multimodal Models](http://arxiv.org/abs/2309.15564). This paper proposes a multimodality model for generating images. The paper is not just dilution based method but instead auto regressive method.it argues to initialize the model from the weight of frozen models.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MagiCapture High-Resolution Multi-Concept Portrait Customization
-tags:  deep-learning diffusion prompt2prompt attention personalize face text2image
+tags:  attention face prompt2prompt diffusion personalize deep-learning text2image
 ---
 
 This is my reading note on [MagiCapture High-Resolution Multi-Concept Portrait Customization](http://arxiv.org/abs/2309.06895). This paper proposes a diffusion method to apply a style to a specific face image. Both the style and face are given as images. To do this, this paper fine tune existing model with LORA given several new loss functions: one is face identity loss for the face region given a face recognition model; another one is background similarity for the style. The two loss are applied to the latent vector.

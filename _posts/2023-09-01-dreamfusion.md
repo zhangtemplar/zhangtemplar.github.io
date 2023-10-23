@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DreamFusion Text-to-3D using 2D Diffusion
-tags:  deep-learning nerf sds dream-field diffusion score-distillation-sampling dream-fusion 3d
+tags:  dream-field 3d diffusion nerf score-distillation-sampling deep-learning sds dream-fusion
 ---
 This is my reading note on [DreamFusion: Text-to-3D using 2D Diffusion](http://arxiv.org/abs/2209.14988). This paper proposes a method (score distillation sampling or SDS) to distill a pre-trained text to image diffusion model to a 3D model. The 3D model, which is based on NERF, is trained per text prompt.
 

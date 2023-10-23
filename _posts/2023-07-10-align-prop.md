@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aligning Text-to-Image Diffusion Models with Reward Backpropagation
-tags:  diffusion deep-learning bad reinforcement text2image reward align-prop
+tags:  reward reinforcement diffusion deep-learning bad align-prop text2image
 ---
 
 This is my reading note for [Aligning Text-to-Image Diffusion Models with Reward Backpropagation](https://align-prop.github.io/). This paper proposes a method how to train diffusion model for a given reward function in a memory efficient way, especially it utilities Lora and checkpoints . To avoid model collapse, it also proposes to randomly truncate number of steps.

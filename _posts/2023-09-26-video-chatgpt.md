@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Video-ChatGPT Towards Detailed Video Understanding via Large Vision and Language Models
-tags:  llm transformer multimodal deep-learning video video-chat video-chatGPT chatGPT llava clip
+tags:  video-chat clip multimodal llm video deep-learning video-chatgpt chatgpt transformer llava
 ---
 
 This is my reading note for [ideo-ChatGPT: Towards Detailed Video Understanding via Large Vision and Language Models](https://github.com/mbzuai-oryx/Video-ChatGPT). The paper extends chatGPT to understand the video. It's based on LLAVA and CLIP. One of the key contribution is that is spatially and temporal pool the per frame visual feature from the clip visual encoder and finally concatenate them as features a video.

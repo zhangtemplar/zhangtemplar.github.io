@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Make-An-Audio Text-To-Audio Generation with Prompt-Enhanced Diffusion Models
-tags:  diffusion deep-learning multimodal transformer audio audio-gen clip clap sound-stream neural-sound hubert bert diff-sound mel-spectrogram make-an-audio audio-lm vq-vae
+tags:  hubert bert clip audio-gen multimodal diffusion diff-sound audio-lm clap sound-stream deep-learning neural-sound mel-spectrogram audio vq-vae transformer make-an-audio
 ---
 
 This is my reading note for [Make-An-Audio: Text-To-Audio Generation with Prompt-Enhanced Diffusion Models](https://Text-to-Audio.github.io). This paper proposes a diffusion model for audio, which uses an auto encoder to convert audio signal to a spectrum which could be natively handled by latent diffusion method.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tool Learning with Foundation Models
-tags:  llm deep-learning review reinforcement
+tags:  reinforcement llm deep-learning review
 ---
 
 This is my read note on [Tool Learning with Foundation Models](http://arxiv.org/abs/2304.08354) This is a nice review paper on how to use LLM with external tool to perform different tasks.

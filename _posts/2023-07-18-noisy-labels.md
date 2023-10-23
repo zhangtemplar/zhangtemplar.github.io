@@ -1,7 +1,7 @@
 ---
 layout: post
 title: When Noisy Labels Meet Long Tail Dilemmas A Representation Calibration Method
-tags:  deep-learning dataset noisy long-tail calibration data-balance co-teaching
+tags:  calibration data-balance noisy dataset deep-learning long-tail co-teaching
 ---
 
 This is my reading note for [When Noisy Labels Meet Long Tail Dilemmas: A Representation Calibration Method](http://arxiv.org/abs/2211.10955). The paper proposes a method to train model from a dataset contains long tail and noisy labels . It's based on contrast learning to learn a robust representation of data; then clustering process is applied to recover the true labels.

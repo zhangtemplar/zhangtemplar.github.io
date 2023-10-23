@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Power of Attorney
-tags:  beneficiary poa finance power-of-attorney
+tags:  power-of-attorney poa beneficiary finance
 ---
 
 The term [power of attorney (POA)](https://www.investopedia.com/terms/p/powerofattorney.asp) refers to a legal authorization that gives a designated person the power to act for someone else. As such, a POA gives the agent or [attorney-in-fact](https://www.investopedia.com/terms/a/attorneyinfact.asp) the authority to act on behalf of the principal. The agent may be given broad or limited authority to make decisions about the principal's property, finances, investments, or medical care.

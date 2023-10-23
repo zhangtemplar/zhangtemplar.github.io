@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Small-scale proxies for large-scale Transformer training instabilities
-tags:  transformer review deep-learning stability vit  layer-norm
+tags:  vit layer-norm stability deep-learning review transformer
 ---
 
 This is my reading note for [Small-scale proxies for large-scale Transformer training instabilities](http://arxiv.org/abs/2309.14322). This paper discusses the method to improve model training stability related to hyper parameter.

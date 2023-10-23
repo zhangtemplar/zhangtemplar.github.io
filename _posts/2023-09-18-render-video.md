@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Rerender A Video Zero-Shot Text-Guided Video-to-Video Translation
-tags:  make-a-video text2video video-p2p edit-a-video null-text-inversion video-diffusion text2video-zero dreamix fatezero optical-flow pix2video ebsynth imagen-video tune-a-video prompt2prompt key-frame vid2vid-zero deep-learning diffusion video
+tags:  null-text-inversion video key-frame dreamix diffusion pix2video deep-learning edit-a-video text2video prompt2prompt ebsynth fatezero video-p2p make-a-video video-diffusion tune-a-video text2video-zero optical-flow imagen-video vid2vid-zero
 ---
 
 This is my reading note on [Rerender A Video: Zero-Shot Text-Guided Video-to-Video Translation](https://github.com/williamyang1991/Rerender_A_Video). The paper proposes a method to edit a video given style mentioned in prompt. The method performed diffusion to edit key frames and then propagate the edited key frames to other frames using optical flow. For key frame editing, several attention based constraint is applied to reserve details and consistency, including shape aware, style aware, pixel aware and fidelity aware.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: CVPR 2019 Paper from Facebook
-tags:  facebook cvpr 2019
+tags:  cvpr facebook 2019
 ---
 
 [2.5D Visual Sound](https://research.fb.com/publications/2-5d-visual-sound/)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Graph Embedding
-tags:  deep-learning graph embedding deep-walk
+tags:  deep-walk graph embedding deep-learning
 ---
 
 ![](https://pic3.zhimg.com/80/v2-ad4da5b234e34bf4cf19aa1ea511d496_hd.jpg)

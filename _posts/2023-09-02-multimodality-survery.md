@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Multimodal Learning with Transformers A Survey
-tags:  deep-learning transformer bert token review embedding multimodal attention clip
+tags:  token attention bert clip multimodal embedding deep-learning review transformer
 ---
 
 This is my reading note on [Multimodal Learning with Transformers A Survey](https://arxiv.org/abs/2206.06488). This a paper provides a very nice overview of the transformer based multimodality learning techniques.

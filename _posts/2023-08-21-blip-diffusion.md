@@ -1,7 +1,7 @@
 ---
 layout: post
 title: BLIP-Diffusion Pre-trained Subject Representation for Controllable Text-to-Image Generation and Editing
-tags:  dreambooth image2image imagen read transformer diffusion re-imagen prompt2prompt instructpix2pix blip2 blip suti multimodality textual-inversion text2image clip
+tags:  multimodality prompt2prompt clip imagen blip2 read diffusion blip text2image instructpix2pix textual-inversion re-imagen dreambooth transformer image2image suti
 ---
 This is my reading note for [BLIP-Diffusion: Pre-trained Subject Representation for Controllable Text-to-Image Generation and Editing](http://arxiv.org/abs/2305.14720). The paper proposes a method for generating an image with text prompt and target visual concept. To do that the paper trained blip model to align visual features with text prompt and then concatenate the visual embedding to the text prompt to generate the need. Code and models will be released at https://github.com/salesforce/LAVIS/tree/main/projects/blip-diffusion. Project page at https://dxli94.github.io/BLIP-Diffusion-website/.
 

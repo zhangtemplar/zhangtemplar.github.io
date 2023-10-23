@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Operating Expense vs Capital Expense
-tags:  capital-expense opex capex finance operating-expense
+tags:  capex operating-expense finance opex capital-expense
 ---
 An operating [expense](https://www.investopedia.com/terms/e/expense.asp) (OPEX) is an expense required for the day-to-day functioning of a business. In contrast, a [capital expense](https://www.investopedia.com/terms/c/capitalexpenditure.asp) (CAPEX) is an expense a business incurs to create a benefit in the future. Operating expenses and capital expenses are treated quite differently for accounting and tax purposes. This note is based on my reading of [The Difference Between an Operating Expense vs. a Capital Expense](https://www.investopedia.com/ask/answers/042415/what-difference-between-operating-expense-and-capital-expense.asp#:~:text=What%20Is%20An%20Operating%20Expense,a%20benefit%20in%20the%20future.)
 

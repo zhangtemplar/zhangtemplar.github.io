@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Network Compression Updates in 2019
-tags:  efficient deep-learning mobile compression prune
+tags:  compression prune efficient deep-learning mobile
 ---
 
 This is my reading note on [网络压缩最新进展：2019年最新文章概览](https://mp.weixin.qq.com/s/CCkrK_pdOPRPYPmHS7W8ZA), which covers recent advances in more efficient network architecturem, including quantization, pruning and network architecture search. Those works are published in CVPR 2019, ICLR 2019 and ICML 2019.

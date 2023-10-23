@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DualToken-ViT Position-aware Efficient Vision Transformer with Dual Token Fusion
-tags:  transformer multimodal deep-learning convolution attention vit token light-vit
+tags:  token attention multimodal convolution light-vit vit deep-learning transformer
 ---
 
 This is my reading note for [DualToken-ViT Position-aware Efficient Vision Transformer with Dual Token Fusion](http://arxiv.org/abs/2309.12424). The paper discuss efficient transformer, which is based on combining convolution with attention: where convolution extracts local information and then fused with global information via attention.

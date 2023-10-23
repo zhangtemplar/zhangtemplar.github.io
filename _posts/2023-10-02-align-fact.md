@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Aligning Large Multimodal Models with Factually Augmented RLHF
-tags:  multimodal deep-learning reinforcement llm reinforcement-learning-human-feedback rlhf vqa llava hallucination otter instruct-blip flamingo mini-gpt kosmos shikra
+tags:  reinforcement flamingo hallucination kosmos shikra multimodal llm vqa reinforcement-learning-human-feedback deep-learning otter instruct-blip llava mini-gpt rlhf
 ---
 
 This is my reading note for [Aligning Large Multimodal Models with Factually Augmented RLHF](https://llava-rlhf.github.io). This paper discusses how to mitigate hallucination for large multimodal model.it proposes two methods, 1) add additional human labeled data to train a reward model to guide the fine tune of the final model: 2) add additional factual data to the reward model besides model's response.

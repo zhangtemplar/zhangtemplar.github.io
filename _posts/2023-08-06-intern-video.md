@@ -1,7 +1,7 @@
 ---
 layout: post
 title: InternVideo General Video Foundation Models via Generative and Discriminative Learning
-tags:  transformer multimodal deep-learning video encoder-decoder constrast-loss masked-video-prediction intern-video
+tags:  multimodal video deep-learning constrast-loss transformer encoder-decoder masked-video-prediction intern-video
 ---
 
 This is my reading note for [InternVideo: General Video Foundation Models via Generative and Discriminative Learning](https://github.com/OpenGVLab/InternVideo). This paper propose to train a multi-modality model for video by utilizes both masked video prediction and contrast loss. However, this paper uses a encoder-decoder for masked video prediction and the other video encoder for contrast loss

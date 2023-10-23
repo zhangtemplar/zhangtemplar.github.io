@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VectorFusion Text-to-SVG by Abstracting Pixel-Based Diffusion Models
-tags:  diffusion deep-learning text2image vector-graph svg vector-fusion dream-booth score-distillation-sampling sds clip-draw vector-ascent style-clip-draw diffvg live sktech-rnn
+tags:  dream-booth vector-fusion diffusion style-clip-draw score-distillation-sampling deep-learning vector-graph sds live diffvg sktech-rnn text2image svg clip-draw vector-ascent
 ---
 
 This is my reading note for [VectorFusion: Text-to-SVG by Abstracting Pixel-Based Diffusion Models](https://ajayj.com/vectorfusion ). This paper utilized the differential rendering for vector graph to train a diffusion model to generate vector graph for a given text.

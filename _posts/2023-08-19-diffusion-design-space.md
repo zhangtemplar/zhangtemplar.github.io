@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Elucidating the Design Space of Diffusion-Based Generative Models
-tags:  dppm ddim deep-learning diffusion ode fid
+tags:  diffusion dppm deep-learning fid ddim ode
 ---
 
 This is my reading note for [Elucidating the Design Space of Diffusion-Based Generative Models](http://arxiv.org/abs/2206.00364). This paper checks the varying design of diffusion method and proposed a unify frame work to incorporate them. Finally the author proposes optimal choice of diffusion method under this frame work.

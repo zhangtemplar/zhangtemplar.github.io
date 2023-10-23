@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Coarse-to-Fine Vision-Language Pre-training with Fusion in the Backbone
-tags:  deep-learning multimodal transformer fiber swin-transformer glip roberta attention clip meter masked-language-modeling bert image-text-matching
+tags:  attention bert masked-language-modeling clip meter multimodal deep-learning transformer image-text-matching fiber swin-transformer glip roberta
 ---
 
 This is my reading note for [Coarse-to-Fine Vision-Language Pre-training with Fusion in the Backbone](https://github.com/microsoft/FIBER). This papers propose a two-stage pre-training strategy: (i) coarse-grained pre-training based on image-text data; followed by (ii) fine-grained pre-training based on image-text-box data.

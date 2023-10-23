@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Vision-Language Intelligence Tasks, Representation Learning, and Large Models
-tags:  multimodal review deep-learning pretrain foundation-model contrast-loss masked-language-modeling masked-image-modeling image-text-matching
+tags:  masked-language-modeling multimodal contrast-loss masked-image-modeling deep-learning review image-text-matching pretrain foundation-model
 ---
 
 This is my reading note for [Vision-Language Intelligence: Tasks, Representation Learning, and Large Models](http://arxiv.org/abs/2203.01922). It is yet another review paper for pre-trained vision-language model. Check my reading note for another review paper in [Large-scale Multi-Modal Pre-trained Models A Comprehensive Survey](https://zhangtemplar.github.io/multi-modal-pretrain/)

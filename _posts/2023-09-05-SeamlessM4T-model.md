@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SeamlessM4T-Massively Multilingual & Multimodal Machine Translation
-tags:  voice-activity-detection seamlessm4t vad tts segmentation speech-recognition w2v-bert audio bert machine-translation sonar self_supervised quantization whisper transformer multimodal response-ai llm asr read language-identification review text2speech hubert laser nllb
+tags:  multimodal w2v-bert response-ai review quantization segmentation asr voice-activity-detection text2speech seamlessm4t hubert whisper llm language-identification machine-translation speech-recognition audio self_supervised sonar bert tts nllb read transformer vad laser
 ---
 This is my reading note 2/2 on [SeamlessM4T-Massively Multilingual & Multimodal Machine Translation](https://github.com/facebookresearch/seamless_communication). It is end to end multi language translation system supports multimodality (text and audio). This paper also provides a good review on machine translation. This note focus on data preparation part of the paper and please read [SeamlessM4T-data](https://zhangtemplar.github.io/SeamlessM4T-data/) for the other part.
 

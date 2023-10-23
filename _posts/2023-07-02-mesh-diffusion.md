@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MeshDiffusion Score-based Generative 3D Mesh Modeling
-tags:  diffusion read deep-learning score-distillation-sampling dream-booth mesh tetrahedral sdf signed-distance-function gan style-gan tet-gan marching-cube dmtet
+tags:  dream-booth signed-distance-function diffusion read sdf gan score-distillation-sampling deep-learning style-gan tet-gan mesh tetrahedral marching-cube dmtet
 ---
 
 This is my reading note for [MeshDiffusion: Score-based Generative 3D Mesh Modeling](http://arxiv.org/abs/2303.08133). This paper represents the 3D mesh as a reformed tetrahedral which is defined on a regular 3D grid with 4 channel features: 3D positional deformation of the vertex and signed distance function values to define the surface.

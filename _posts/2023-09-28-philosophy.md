@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 西方哲学史思维导图
-tags:  philosophy misc history note
+tags:  philosophy note history misc
 ---
 
 I would like to cite [西方哲学史思维导图+脉络图（完整版）](https://zhuanlan.zhihu.com/p/75348403)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Anchor Free Object Detection
-tags:  unitbox cornernet extremenet deep-learning centernet ga-rpn foveabox ssd object-detection densebox yolo anchor-free fcos psaf
+tags:  psaf foveabox fcos object-detection ga-rpn densebox deep-learning extremenet cornernet yolo centernet ssd anchor-free unitbox
 ---
 
 The most sucessfull single stage object detection algorithms, e.g., [YOLO](http://arxiv.org/abs/1506.02640), [SSD](https://arxiv.org/pdf/1512.02325.pdf), all relies all some anchor to refine to the final detection location. For those algorithms, the anchor are typically defined as the grid on the image coordinates at all possible locations, with different scale and aspect ratio.

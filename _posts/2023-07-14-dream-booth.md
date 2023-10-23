@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DreamBooth Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation
-tags:  diffusion deep-learning image2image personalize dream-booth imagen dalle-2 cogview parti vq-gan gan classifier-free-guidance textual-inversion
+tags:  dream-booth dalle-2 imagen diffusion gan parti personalize classifier-free-guidance textual-inversion deep-learning vq-gan cogview image2image
 ---
 
 This is my reading note for [DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://dreambooth.github.io/). This paper proposes a personalized method for text to image based on diffusion. To achieve this, it firsts learn to align the visual content to be personalized to a rarely used text embedding, then this text embedding will be insert to the text to control the image generation.

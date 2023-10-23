@@ -1,7 +1,7 @@
 ---
 layout: post
 title: In-Context Pretraining Language Modeling Beyond Document Boundaries
-tags:  deep-learning llm tool context nearest-neighbor travel-salesman-problem
+tags:  nearest-neighbor llm travel-salesman-problem deep-learning context tool
 ---
 
 This is my reading note for [In-Context Pretraining: Language Modeling Beyond Document Boundaries](http://arxiv.org/abs/2310.10638). This paper proposes to group relevant instead of random documents in each batch to improve Long text learning. The relevant docs are found by performs a traveling salesmen problem in a graph of documents. The edges of two documents define whether the two documents are in the top k nearest neighbors.

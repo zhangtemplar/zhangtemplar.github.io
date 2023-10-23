@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Efficient Streaming Language Models with Attention Sinks
-tags:  transformer deep-learning attention streaming-llm longnet register context llm window-attention flash-attention sliding-window rotation-position-encoding rope
+tags:  streaming-llm attention rope llm longnet deep-learning window-attention context flash-attention sliding-window transformer rotation-position-encoding register
 ---
 
 This is my reading note for [Efficient Streaming Language Models with Attention Sinks](https://github.com/mit-han-lab/streaming-llm). This paper proposes a method to extend a LLM to infinite length text. This method is based on sliding attention plus prepending four sink tokens to aggregate global information. This paper shares similar idea as [Vision Transformers Need Registers](https://zhangtemplar.github.io/transformer-register/), which adds addition token to capture global information in attention.

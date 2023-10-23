@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Dynamic Mesh-Aware Radiance Fields
-tags:  light hdr brdf mesh deep-learning nerf ray-trace ray-march iron neuphysics 3d nerf-studio nvdiffrec signed-distance-function
+tags:  signed-distance-function iron neuphysics light 3d nerf-studio nerf hdr deep-learning mesh nvdiffrec ray-trace brdf ray-march
 ---
 
 This is my reading note on [Dynamic Mesh-Aware Radiance Fields](http://arxiv.org/abs/2309.04581). This paper proposes a method of rendering NERF with mesh simultaneously. To do that, it modifies the ray trace. To handle occlusion and shadow, SDF is used to represent the surface of NERF and light source is estimated from NERF.

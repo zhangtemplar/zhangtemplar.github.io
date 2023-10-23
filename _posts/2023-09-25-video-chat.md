@@ -1,7 +1,7 @@
 ---
 layout: post
 title: VideoChat Chat-Centric Video Understanding
-tags:  llm transformer multimodal deep-learning video chatgpt blip2 video-chat video-chatgpt
+tags:  video-chat multimodal llm video blip2 deep-learning video-chatgpt chatgpt transformer
 ---
 
 This is my reading note for [VideoChat: Chat-Centric Video Understanding](https://github.com/OpenGVLab/Ask-Anything). The papers extends chatGPT to understand the video. To this end.it develops a video backbone based on BLIP2

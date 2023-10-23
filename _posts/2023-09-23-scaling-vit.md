@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Scaling Vision Transformers
-tags:  network-architecture-search transformer multimodal review deep-learning vit adam adafactor half-precision weight-decay
+tags:  multimodal half-precision vit network-architecture-search deep-learning review adam transformer weight-decay adafactor
 ---
 
 This is my reading note for [Scaling Vision Transformers](http://arxiv.org/abs/2106.04560). This paper provides a detailed comparison and study of designing vision transformer.

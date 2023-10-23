@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Advancing Example Exploitation Can Alleviate Critical Challenges in Adversarial Training
-tags:  deep-learning gan sat mart gairat teat robust accuracy fastat grad-align 
+tags:  gairat mart teat accuracy sat gan fastat deep-learning robust grad-align
 ---
 
 This is my reading note for [Advancing Example Exploitation Can Alleviate Critical Challenges in Adversarial Training](https://openaccess.thecvf.com/content/ICCV2023/html/Ge_Advancing_Example_Exploitation_Can_Alleviate_Critical_Challenges_in_Adversarial_Training_ICCV_2023_paper.html). The paper proposes a simple method to improve performance of adversarial learning. It's based on the observation that some samples has impacts to robustness but not accuracy; Vice verse. Thus it propose a method to adjust the weight of samples according.

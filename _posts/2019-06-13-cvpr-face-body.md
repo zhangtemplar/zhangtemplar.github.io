@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Face and Body Paper (Oral) in CVPR 2019
-tags:  body tracking face cvpr
+tags:  tracking face cvpr body
 ---
 
 # [High-Quality Face Capture Using Anatomical Muscles](https://arxiv.org/pdf/1812.02836)

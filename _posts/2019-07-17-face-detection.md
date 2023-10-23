@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Face Detection, Landmark Detection in CVPR 2019
-tags:  face-detection deep-learning landmark-detection action-unit-detection 2019 3dmm cvpr
+tags:  3dmm cvpr landmark-detection action-unit-detection deep-learning 2019 face-detection
 ---
 
 ![](https://www.learnopencv.com/wp-content/uploads/2015/10/Facial-Feature-Detection.jpg)

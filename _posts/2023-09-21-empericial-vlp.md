@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Empirical Study of Training End-to-End Vision-and-Language Transformers
-tags:  deep-learning multimodal transformer review meter vinvl vit vision-transformer bert clip vibert blip attenion co-attention merged-attention visualbert simvlm encoder decoder constrastive-loss masked-language-modeling masked-image-modeling image-text-matching albef vilt vq-vae roberta deit swin-transformer
+tags:  simvlm multimodal masked-image-modeling review encoder vision-transformer meter masked-language-modeling vit deep-learning vilt image-text-matching vq-vae vibert clip blip visualbert deit co-attention decoder swin-transformer roberta merged-attention bert constrastive-loss attenion vinvl transformer albef
 ---
 
 This is my reading note for [An Empirical Study of Training End-to-End Vision-and-Language Transformers](https://github.com/zdou0830/METER). This paper provides a good review and comparison of multi modality (video and text) model's design choice.

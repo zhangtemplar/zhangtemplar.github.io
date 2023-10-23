@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DiffusionDet Diffusion Model for Object Detection
-tags:  object-detection diffusion transformer deep-learning detr r-cnn mask-rcnn sparse-rcnn diffusion-det retina-net resnet swin-transformer cascade-rcnn faster-rcnn
+tags:  mask-rcnn diffusion object-detection retina-net diffusion-det deep-learning resnet detr sparse-rcnn transformer r-cnn swin-transformer cascade-rcnn faster-rcnn
 ---
 
 This is my reading note for [DiffusionDet: Diffusion Model for Object Detection](https://github.com/ShoufaChen/DiffusionDet). This paper formulates the object detection problem as a diffusion process: recover object bounding box from noisy estimation. The initial estimation could be from purely random Gaussian noise. One benefit of this method is that it could automatically handle different number of bounding boxes

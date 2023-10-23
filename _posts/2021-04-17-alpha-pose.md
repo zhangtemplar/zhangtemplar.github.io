@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AlphaPose--Multip Personal Human Pose Estimation
-tags:  alphapose deep-learning rmpe multi-person pose-estimation
+tags:  pose-estimation alphapose deep-learning multi-person rmpe
 ---
 This is my reading note for [RMPE: Regional Multi-person Pose Estimation](https://arxiv.org/abs/1612.00137) and the code is available at [MVIG-SJTU](https://github.com/MVIG-SJTU)/[AlphaPose](https://github.com/MVIG-SJTU/AlphaPose). This paper is a novel regional multi-person pose estimation (RMPE) framework to facilitate pose estimation in the presence of inaccurate human bounding boxes. The framework consists of three components: Symmetric Spatial Transformer Network (SSTN), Parametric Pose Non-Maximum-Suppression (NMS), and Pose-Guided Proposals Generator (PGPG).
 

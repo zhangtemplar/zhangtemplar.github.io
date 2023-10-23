@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Improved Baselines with Visual Instruction Tuning
-tags:  llm multimodal deep-learning llava qwen-vl flamingo instruct-blip qformer blip
+tags:  qwen-vl multimodal llm blip qformer deep-learning instruct-blip llava flamingo
 ---
 
 This is my reading note for [Improved Baselines with Visual Instruction Tuning](http://arxiv.org/abs/2310.03744). This paper shows how to improve the performance of LLAVA with simple methods.

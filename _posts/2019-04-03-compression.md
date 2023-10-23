@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Network Compression
-tags:  bit-compression seperable-filter deep-learning mobilenet squeezenet network-pruning low-rank-approximation sparsity xception quantization
+tags:  bit-compression seperable-filter mobilenet xception low-rank-approximation deep-learning squeezenet network-pruning quantization sparsity
 ---
 
 The trained network is typically too large to run efficiently on mobile device. For example, VGG16 used for image classification has more 130 Million parameter (about 600 MB on model size) and requires about 31 billion operations to classify an image, which is way to expensive to be done on mobile.

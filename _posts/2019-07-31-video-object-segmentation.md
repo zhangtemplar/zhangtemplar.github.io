@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Video Object Segmentation
-tags:  osvos deep-learning premvos video-object-segmentation lucid-data-dreaming feelvos
+tags:  osvos premvos video-object-segmentation feelvos lucid-data-dreaming deep-learning
 ---
 
 ![](https://miro.medium.com/max/1400/1*qooRKoB2wPNKvGs-C_MI-A.png)

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: DeepSpeed-VisualChat Multi-Round Multi-Image Interleave Chat via Multi-Modal Causal Attention
-tags:  llm transformer multimodal deep-learning attention clip chat-gpt casual-attention flamingo mini-gpt4 qwen-vl llama
+tags:  attention chat-gpt qwen-vl clip multimodal llm casual-attention llama mini-gpt4 deep-learning transformer flamingo
 ---
 
 This is my reading note for [DeepSpeed-VisualChat: Multi-Round Multi-Image Interleave Chat via Multi-Modal Causal Attention](http://arxiv.org/abs/2309.14327). This paper proposes a method for multi round multi-image multi modality model. The paper utilizes a frozen LLM and visual encoder. The contribution of the paper includes: 1. Casual cross attention method to combine image and multiround text; 2. A new dataset.

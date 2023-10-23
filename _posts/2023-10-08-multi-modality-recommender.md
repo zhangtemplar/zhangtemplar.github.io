@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Comprehensive Survey on Multimodal Recommender Systems Taxonomy, Evaluation, and Future Directions
-tags:  deep-learning multimodal review recommendation
+tags:  multimodal recommendation deep-learning review
 ---
 
 This is my reading note for [A Comprehensive Survey on Multimodal Recommender Systems: Taxonomy, Evaluation, and Future Directions](https://github.com/enoche/MMRec). This paper provides a review for multimodality recommendation system. However, it doesn’t cover the method based on transformer. It still provides a good review on the metric of recommendation system.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Word-As-Image for Semantic Typography
-tags:  diffusion deep-learning text2image vector-graph svg vector-fusion dream-booth score-distillation-sampling sds clip-draw vector-ascent style-clip-draw diffvg live sktech-rnn siggraph true-type post-script
+tags:  dream-booth siggraph vector-graph live clip-draw post-script diffusion score-distillation-sampling deep-learning text2image true-type vector-ascent style-clip-draw diffvg svg vector-fusion sds sktech-rnn
 ---
 
 This is my reading note for [Word-As-Image for Semantic Typography](https://wordasimage.github.io/Word-As-Image-Page/). This paper utilized the differential rendering for vector graph to train a diffusion model to generate vector graph for a given text. Check my note for related paper in [# VectorFusion Text-to-SVG by Abstracting Pixel-Based Diffusion Models](https://zhangtemplar.github.io/vector-fusion/)

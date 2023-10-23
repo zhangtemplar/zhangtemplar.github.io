@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Face Reconstruction in CVPR 2019
-tags:  face-reconstruction 3dmm deep-learning
+tags:  face-reconstruction deep-learning 3dmm
 ---
 
 ![](http://cvlab.cse.msu.edu/images/reconstructionTeaser.png)

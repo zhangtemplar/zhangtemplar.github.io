@@ -1,7 +1,7 @@
 ---
 layout: post
 title: The Victim and The Beneficiary Exploiting a Poisoned Model to Train a Clean Model on Poisoned Data
-tags:  deep-learning self_supervised dataset data-augmentation backdoor-attack cut-mix mixup simclr attention-mix
+tags:  mixup backdoor-attack simclr dataset deep-learning data-augmentation self_supervised cut-mix attention-mix
 ---
 
 This is my reading note for [The Victim and The Beneficiary: Exploiting a Poisoned Model to Train a Clean Model on Poisoned Data](https://openaccess.thecvf.com/content/ICCV2023/html/Zhu_The_Victim_and_The_Beneficiary_Exploiting_a_Poisoned_Model_to_ICCV_2023_paper.html). This paper proposes a method to train a model which is oust to poison data attack.it contains three components: 1) use entropy to filter out poison data; 2) train a network on clean data and improve is robustness by using attention mix; 3) combine both prison data and clean data using semi-supervised learning.

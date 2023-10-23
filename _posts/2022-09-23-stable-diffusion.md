@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stable Diffusion
-tags:  denoising deep-learning diffusion autoregressor stable gan
+tags:  diffusion gan autoregressor stable deep-learning denoising
 ---
 This is my 2nd reading note on diffusion model, which will focus on the `stabe diffusion`, aka [High-Resolution Image Synthesis with Latent Diffusion Models](https://arxiv.org/abs/2112.10752v2). By decomposing the image formation process into a sequential application of denoising autoencoders, diffusion models (DMs) achieve state-of-the-art synthesis results on image data and beyond. However, as mentioned in [diffusion](https://zhangtemplar.github.io/diffusion/), DM sufferes high computational cost. The proposed Latent Diffusion Models (LDM) reduces the computational cost via latent space and introduces cross-attention to enable multi-modality conditioning.
 

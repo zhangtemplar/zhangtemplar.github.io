@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Leveraging Unpaired Data for Vision-Language Generative Models via Cycle Consistency
-tags:  multimodal deep-learning self_supervised image2image text2image cycle-consistency cycle-gan image2text image-caption muse cam3leon cobit vq-vae vector-quantization stable-diffusion glide dall-e2 blip sim-vlm clip
+tags:  cycle-gan multimodal image2image image2text deep-learning cycle-consistency vq-vae text2image sim-vlm clip blip glide vector-quantization dall-e2 self_supervised image-caption muse stable-diffusion cam3leon cobit
 ---
 
 This is my reading note for [Leveraging Unpaired Data for Vision-Language Generative Models via Cycle Consistency](http://arxiv.org/abs/2310.03734). The papers proposes a method to train a multi modality model between text and image. Especially, the paper propose cycle consistency loss to leverage unpaired text and image: use image to generate text and use text to recover image and vice verse. It reminds me cycle-GAN paper.

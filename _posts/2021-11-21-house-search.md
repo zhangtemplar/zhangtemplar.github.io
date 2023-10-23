@@ -1,7 +1,7 @@
 ---
 layout: post
 title: My House Search in 2021
-tags:  san-carlos mountain-view house bay-area belmont
+tags:  bay-area belmont san-carlos house mountain-view
 ---
 
 This post is my review of house search from Sep to Oct of 2021. I have checked 88 houses and most of which I have paid a visit. I was looking for a new house as my office has been moved to north and the long commute from my current house makes me to move somewhere north. As a result, I mainly considered the area from Mountain View (north of 85) to Belmont.

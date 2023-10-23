@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Key-Locked Rank One Editing for Text-to-Image Personalization
-tags:  image2image deep-learning dreambooth diffusion prompt2prompt perfusion personalize paint-with-words attention textual-inversion
+tags:  perfusion attention prompt2prompt diffusion paint-with-words personalize textual-inversion deep-learning dreambooth image2image
 ---
 This is my reading note on [Key-Locked Rank One Editing for Text-to-Image Personalization](http://arxiv.org/abs/2305.01644). This paper proposes a personalized image generation method base on controlling attention module of the diffusion model. Especially key captures the layout of concept and value captures the identity of the new concept. A rank one update is applied to the attention weight to this purpose.
 

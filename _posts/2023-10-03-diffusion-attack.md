@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Raising the Cost of Malicious AI-Powered Image Editing
-tags:  diffusion deep-learning image2image gan text2image privacy attack
+tags:  text2image diffusion gan attack deep-learning privacy image2image
 ---
 
 This is my reading note for [Raising the Cost of Malicious AI-Powered Image Editing](http://arxiv.org/abs/2302.06588). This paper proposes a method to stop an image being edited by on diffusion model. The method is based on adverbial attack: learn a perturbation to the target image such that the model (encoder or diffusion) will generate noise or degraded image. However this method may not always work or may fall when the model changes.
