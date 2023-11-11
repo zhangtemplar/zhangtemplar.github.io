@@ -8,7 +8,7 @@ layout: default
 {% for post in site.tags[page.tag] %}
   <li><a href="{{ post.url }}">{{ post.title }}</a> ({{ post.date | date_to_string }})<br>
     <div class="entry">
-      {{ sd.excerpt }}
+      {{ post.excerpt }}
     </div>
   </li>
 {% endfor %}
